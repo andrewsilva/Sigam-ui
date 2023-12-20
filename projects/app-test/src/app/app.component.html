@@ -1,0 +1,77 @@
+<h2>button</h2>
+<sigam-button label="Butao" type="Submit" [rounded]=true></sigam-button>
+
+<hr>
+<h2>card</h2>
+<sigam-card title="Titulo" subtitle="Subtitle" footer="Card Footer">
+  algum conteudo maluco
+</sigam-card>
+
+<hr>
+<h2>Nav</h2>
+<sigam-nav [model]="items"></sigam-nav>
+
+<hr>
+<h2>checkbox</h2>
+<sigam-checkbox
+  label="Cheese"
+  value="Cheese"
+  [(checked)]="pizzaIngredient['Cheese']"
+  inputId="ingredient1"
+  (checkedChange)="onCheckboxChange('Cheese', $event)">
+</sigam-checkbox>
+
+<sigam-checkbox
+  label="Mushroom"
+  value="Mushroom"
+  [(checked)]="pizzaIngredient['Mushroom']"
+  inputId="ingredient2"
+  (checkedChange)="onCheckboxChange('Mushroom', $event)">
+</sigam-checkbox>
+
+<hr>
+<h2>dropdown-select</h2>
+<sigam-dropdown
+  [options]="cities"
+  [(selectedOption)]="selectedCity"
+  (selectedOptionChange)="onCityChange($event)"
+  placeholder="Select a City">
+</sigam-dropdown>
+
+<hr>
+<h2>Paginator</h2>
+<sigam-paginator
+  [first]="first"
+  [rows]="rows"
+  [totalRecords]="totalRecords"
+  (pageChange)="onPageChange($event)">
+</sigam-paginator>
+
+<hr>
+<h2>Confirm Box</h2>
+<sigam-confirmbox></sigam-confirmbox>
+
+<hr>
+<h2>tab menu</h2>
+<!-- <sigam-tabmenu [items]="itemsMenu!" [defaultActiveItem]="activeItem" (activeItemChange)="handleActiveItemChange($event)"></sigam-tabmenu> -->
+
+<hr>
+<h2>table</h2>
+<sigam-table [columns]="columns" [data]="products"></sigam-table>
+
+<hr>
+<h2>multi select</h2>
+<sigam-multiselect [options]="citiesM" optionLabel="nome" (selectionChange)="onCitiesChange($event)"></sigam-multiselect>
+
+<hr>
+<h2>Calendar</h2>
+<sigam-calendar [(ngModel)]="date" (dateChange)="onDateChange($event)"></sigam-calendar>
+
+<hr>
+<h2>Toast</h2>
+<sigam-toast [position]="'top-center'"
+             [message]="{ severity: 'info', summary: 'Info Message', detail: 'Mensagem do componente pai' }"
+             #toastComponent>
+</sigam-toast>
+
+<sigam-button label="Mostrar toast" type="Submit" (click)="showCustomToast()"></sigam-button>

@@ -1,0 +1,14 @@
+<p-card>
+  <ng-container *ngIf="title">
+    <div class="p-card-header">{{ title }}</div>
+  </ng-container>
+  <ng-container *ngIf="subtitle">
+    <div class="p-card-subheader">{{ subtitle }}</div>
+  </ng-container>
+  <div class="p-card-content">
+    <ng-content></ng-content>
+  </div>
+  <ng-container *ngIf="footer">
+    <div class="p-card-footer">{{ footer }}</div>
+  </ng-container>
+</p-card>

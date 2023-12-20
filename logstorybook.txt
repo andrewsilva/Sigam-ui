@@ -1,0 +1,3033 @@
+
+> sigam-ui@0.0.0 storybook
+> ng run UiComponents:storybook --debug-webpack
+
+[0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m
+[48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m [0m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [48;5;255m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+[0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
+
+1.1.23
+
+TypeScript version used by Compodoc : 5.2.2
+
+TypeScript version of current project : 5.2.2
+
+Node.js version : v21.1.0
+
+Operating system : Windows 10
+
+[18:32:33] No configuration file found, switching to CLI flags.
+[18:32:33] Using tsconfig file : C:\Users\andrew\Desktop\GitHub\SigamUI\projects\ui-components\.storybook\tsconfig.json
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/.storybook/preview.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/public-api.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/styles.css
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.service.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/button.component.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/button.css
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/button.stories.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/Configure.mdx
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/header.component.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/header.css
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/header.stories.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/page.component.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/page.css
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/page.stories.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/user.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/accessibility.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/accessibility.svg
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/addon-library.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/assets.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/avif-test-image.avif
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/context.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/discord.svg
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/docs.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/figma-plugin.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/github.svg
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/share.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/styling.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/testing.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/theming.png
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/tutorials.svg
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/assets/youtube.svg
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.module.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.stories.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.module.ts
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.component.css
+[18:32:33] Excluding      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.component.html
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.component.ts
+[18:32:33] Including      : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.module.ts
+[18:32:33] Searching package.json file
+[18:32:33] package.json file found
+[18:32:33] Processing package.json dependencies
+[18:32:33] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[18:32:33] README.md file found
+[18:32:33] Error during C:\Users\andrew\Desktop\GitHub\SigamUI\CHANGELOG read
+[18:32:33] Continuing without CHANGELOG.md file
+[18:32:33] Error during C:\Users\andrew\Desktop\GitHub\SigamUI\CONTRIBUTING read
+[18:32:33] Continuing without CONTRIBUTING.md file
+[18:32:33] Error during C:\Users\andrew\Desktop\GitHub\SigamUI\LICENSE read
+[18:32:33] Continuing without LICENSE.md file
+[18:32:33] Error during C:\Users\andrew\Desktop\GitHub\SigamUI\TODO read
+[18:32:33] Continuing without TODO.md file
+[18:32:33] Get dependencies data
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/.storybook/preview.ts
+[18:32:33] found          : preview
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/public-api.ts
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.component.ts
+[18:32:33] found          : UiComponentsComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.service.ts
+[18:32:33] found          : UiComponentsService
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/button.component.ts
+[18:32:33] found          : ButtonComponent
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/button.stories.ts
+[18:32:33] found          : meta
+[18:32:33] found          : Story
+[18:32:33] found          : Primary
+[18:32:33] found          : Secondary
+[18:32:33] found          : Large
+[18:32:33] found          : Small
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/header.component.ts
+[18:32:33] found          : HeaderComponent
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- ButtonComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/header.stories.ts
+[18:32:33] found          : meta
+[18:32:33] found          : Story
+[18:32:33] found          : LoggedIn
+[18:32:33] found          : LoggedOut
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/page.component.ts
+[18:32:33] found          : PageComponent
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- HeaderComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/page.stories.ts
+[18:32:33] found          : meta
+[18:32:33] found          : Story
+[18:32:33] found          : LoggedOut
+[18:32:33] found          : LoggedIn
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/stories/user.ts
+[18:32:33] found          : User
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.component.ts
+[18:32:33] found          : ButtonComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.module.ts
+[18:32:33] found          : SigamButtonModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- ButtonModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- ButtonComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- ButtonComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.stories.ts
+[18:32:33] found          : Template
+[18:32:33] found          : Primary
+[18:32:33] found          : Disabled
+[18:32:33] found          : Loading
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.component.ts
+[18:32:33] found          : CalendarComponent
+[18:32:33]                : - providers:
+[18:32:33]                : 	- {
+    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => CalendarComponent), multi: true
+}
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.module.ts
+[18:32:33] found          : SigamCalendarModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- FormsModule
+[18:32:33]                : 	- CalendarModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- CalendarComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- CalendarComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.component.ts
+[18:32:33] found          : ConfirmboxComponent
+[18:32:33]                : - providers:
+[18:32:33]                : 	- ConfirmationService
+[18:32:33]                : 	- MessageService
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.module.ts
+[18:32:33] found          : SigamConfirmboxModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- ToastModule
+[18:32:33]                : 	- ConfirmDialogModule
+[18:32:33]                : 	- ButtonModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- ConfirmboxComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- ConfirmboxComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.component.ts
+[18:32:33] found          : CardComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.module.ts
+[18:32:33] found          : SigamCardModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- CardModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- CardComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- CardComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.component.ts
+[18:32:33] found          : CheckboxComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.module.ts
+[18:32:33] found          : SigamCheckboxModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- CheckboxModule
+[18:32:33]                : 	- FormsModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- CheckboxComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- CheckboxComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.component.ts
+[18:32:33] found          : DropdownComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.module.ts
+[18:32:33] found          : SigamDropdownModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- DropdownModule
+[18:32:33]                : 	- FormsModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- DropdownComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- DropdownComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.component.ts
+[18:32:33] found          : NavComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.module.ts
+[18:32:33] found          : SigamNavModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- MenubarModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- NavComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- NavComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.component.ts
+[18:32:33] found          : PaginatorComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.module.ts
+[18:32:33] found          : SigamPaginatorModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- PaginatorModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- PaginatorComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- PaginatorComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.component.ts
+[18:32:33] found          : MultiselectComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.module.ts
+[18:32:33] found          : SigamMultiselectModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- FormsModule
+[18:32:33]                : 	- MultiSelectModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- MultiselectComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- MultiselectComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.component.ts
+[18:32:33] found          : TabmenuComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.module.ts
+[18:32:33] found          : SigamTabmenuModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- TabMenuModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- TabmenuComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- TabmenuComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.component.ts
+[18:32:33] found          : ToastComponent
+[18:32:33]                : - providers:
+[18:32:33]                : 	- MessageService
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.module.ts
+[18:32:33] found          : SigamToastModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- ToastModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- ToastComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- ToastComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.component.ts
+[18:32:33] found          : TableColumn
+[18:32:33] found          : TableComponent
+[18:32:33] parsing        : C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.module.ts
+[18:32:33] found          : SigamTableModule
+[18:32:33]                : - imports:
+[18:32:33]                : 	- CommonModule
+[18:32:33]                : 	- TableModule
+[18:32:33]                : - exports:
+[18:32:33]                : 	- TableComponent
+[18:32:33]                : - declarations:
+[18:32:33]                : 	- TableComponent
+[18:32:33] -------------------
+[18:32:33] Project statistics 
+[18:32:33] - files      : 37
+[18:32:33] - module     : 12
+[18:32:33] - component  : 16
+[18:32:33] - injectable : 1
+[18:32:33] - interface  : 2
+[18:32:33] -------------------
+[18:32:33] Prepare components
+[18:32:33]  ButtonComponent has styleUrls, include them
+[18:32:33]  ButtonComponent has a templateUrl, include it
+[18:32:33]  ButtonComponent has styleUrls, include them
+[18:32:33]  CalendarComponent has a templateUrl, include it
+[18:32:33]  CalendarComponent has styleUrls, include them
+[18:32:33]  CardComponent has a templateUrl, include it
+[18:32:33]  CardComponent has styleUrls, include them
+[18:32:33]  CheckboxComponent has a templateUrl, include it
+[18:32:33]  CheckboxComponent has styleUrls, include them
+[18:32:33]  ConfirmboxComponent has a templateUrl, include it
+[18:32:33]  ConfirmboxComponent has styleUrls, include them
+[18:32:33]  DropdownComponent has a templateUrl, include it
+[18:32:33]  DropdownComponent has styleUrls, include them
+[18:32:33]  HeaderComponent has styleUrls, include them
+[18:32:33]  MultiselectComponent has a templateUrl, include it
+[18:32:33]  MultiselectComponent has styleUrls, include them
+[18:32:33]  NavComponent has a templateUrl, include it
+[18:32:33]  NavComponent has styleUrls, include them
+[18:32:33]  PageComponent has styleUrls, include them
+[18:32:33]  PaginatorComponent has a templateUrl, include it
+[18:32:33]  PaginatorComponent has styleUrls, include them
+[18:32:33]  TableComponent has a templateUrl, include it
+[18:32:33]  TableComponent has styleUrls, include them
+[18:32:33]  TabmenuComponent has a templateUrl, include it
+[18:32:33]  TabmenuComponent has styleUrls, include them
+[18:32:33]  ToastComponent has a templateUrl, include it
+[18:32:33]  ToastComponent has styleUrls, include them
+[18:32:33]  UiComponentsComponent has styles, include them
+[18:32:33] Prepare modules
+[18:32:33] Prepare injectables
+[18:32:33] Prepare interfaces
+[18:32:33] Prepare miscellaneous
+[18:32:33] Process documentation coverage report
+[18:32:33] Generating documentation in export format json
+[18:32:33] Documentation generated in projects/ui-components/ in 0.539 seconds
+
+info Using Babel compiler
+info Addon-docs: using MDX2
+info => Using implicit CSS loaders
+info => Using angular browser target options from "UiComponents:build"
+info => Using angular project with "tsConfig:C:\Users\andrew\Desktop\GitHub\SigamUI\projects\ui-components\.storybook\tsconfig.json"
+andref [
+  {
+    test: /\.?(svg|html)$/,
+    resourceQuery: /\?ngResource/,
+    type: 'asset/source'
+  },
+  { test: /[/\\]rxjs[/\\]add[/\\].+\.js$/, sideEffects: true },
+  {
+    test: /\.[cm]?[tj]sx?$/,
+    resolve: { fullySpecified: false },
+    exclude: [
+      /[\\/]node_modules[/\\](?:core-js|@babel|tslib|web-animations-js|web-streams-polyfill|whatwg-url)[/\\]/
+    ],
+    use: [ [Object] ]
+  },
+  {
+    test: /\.[cm]?tsx?$/,
+    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@ngtools\\webpack\\src\\ivy\\index.js',
+    exclude: [
+      /[\\/]node_modules[/\\](?:css-loader|mini-css-extract-plugin|webpack-dev-server|webpack)[/\\]/
+    ]
+  },
+  { test: /\.(?:css)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:scss)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:sass)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:less)$/i, rules: [ [Object], [Object] ] },
+  {
+    test: /\.stories\.([tj])sx?$|(stories|story)\.mdx$/,
+    enforce: 'post',
+    use: [ [Object] ]
+  },
+  { test: /\.m?js$/, type: 'javascript/auto' },
+  { test: /\.m?js$/, resolve: { fullySpecified: false } },
+  {
+    test: /\.(mjs|jsx?)$/,
+    use: [ [Object] ],
+    include: [ 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI' ],
+    exclude: [
+      /node_modules/,
+      'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-stories.js',
+      'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-config-entry.js'
+    ]
+  },
+  { test: /\.md$/, type: 'asset/source' },
+  { test: /(stories|story)\.mdx$/, use: [ [Object] ] },
+  {
+    test: /\.mdx$/,
+    exclude: /(stories|story)\.mdx$/,
+    use: [ [Object] ]
+  },
+  {
+    test: /\.(svg|ico|jpg|jpeg|png|apng|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+    type: 'asset/resource',
+    generator: { filename: 'static/media/[path][name][ext]' }
+  },
+  {
+    test: /\.(mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
+    type: 'asset',
+    parser: { dataUrlCondition: [Object] },
+    generator: { filename: 'static/media/[path][name][ext]' }
+  },
+  { resourceQuery: /raw/, type: 'asset/source' },
+  {
+    exclude: /node_modules/,
+    test: /\.css$/,
+    use: [ 'style-loader', 'css-loader' ],
+    include: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components\\node_modules\\primeng\\resources'
+  }
+]
+info => Using default Webpack5 setup
+Preview webpack config
+{
+  name: 'preview',
+  mode: 'development',
+  bail: false,
+  devtool: 'cheap-module-source-map',
+  entry: [
+    'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\webpack-hot-middleware\\client.js?reload=true&quiet=false&noInfo=false',
+    'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-config-entry.js',
+    '@angular/compiler'
+  ],
+  output: {
+    path: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\.cache\\storybook\\public',
+    filename: '[name].iframe.bundle.js',
+    publicPath: ''
+  },
+  stats: { preset: 'none', logging: 'error' },
+  watchOptions: { ignored: /node_modules/ },
+  externals: {
+    '@storybook/addons': '__STORYBOOK_MODULE_ADDONS__',
+    '@storybook/global': '__STORYBOOK_MODULE_GLOBAL__',
+    '@storybook/channel-postmessage': '__STORYBOOK_MODULE_CHANNEL_POSTMESSAGE__',
+    '@storybook/channel-websocket': '__STORYBOOK_MODULE_CHANNEL_WEBSOCKET__',
+    '@storybook/channels': '__STORYBOOK_MODULE_CHANNELS__',
+    '@storybook/client-api': '__STORYBOOK_MODULE_CLIENT_API__',
+    '@storybook/client-logger': '__STORYBOOK_MODULE_CLIENT_LOGGER__',
+    '@storybook/core-client': '__STORYBOOK_MODULE_CORE_CLIENT__',
+    '@storybook/core-events': '__STORYBOOK_MODULE_CORE_EVENTS__',
+    '@storybook/preview-web': '__STORYBOOK_MODULE_PREVIEW_WEB__',
+    '@storybook/preview-api': '__STORYBOOK_MODULE_PREVIEW_API__',
+    '@storybook/store': '__STORYBOOK_MODULE_STORE__',
+    '@storybook/types': '__STORYBOOK_MODULE_TYPES__'
+  },
+  ignoreWarnings: [
+    { message: /export '\S+' was not found in 'global'/ },
+    { message: /export '\S+' was not found in '@storybook\/global'/ }
+  ],
+  plugins: [
+    NamedChunksPlugin {},
+    OccurrencesPlugin {
+      options: { aot: false, scriptsOptimization: false }
+    },
+    DedupeModuleResolvePlugin {
+      options: { verbose: undefined },
+      modules: Map(0) {}
+    },
+    AngularWebpackPlugin {
+      pluginOptions: {
+        emitClassMetadata: false,
+        emitNgModuleScope: true,
+        jitMode: true,
+        fileReplacements: {},
+        substitutions: {},
+        directTemplateLoading: true,
+        tsconfig: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components\\.storybook\\tsconfig.json',
+        compilerOptions: {
+          sourceMap: false,
+          declaration: false,
+          declarationMap: false,
+          preserveSymlinks: false
+        },
+        inlineStyleFileExtension: 'css'
+      },
+      compilerCliModule: undefined,
+      watchMode: undefined,
+      ngtscNextProgram: undefined,
+      builder: undefined,
+      sourceFileCache: undefined,
+      webpackCache: undefined,
+      webpackCreateHash: undefined,
+      fileDependencies: Map(0) {},
+      requiredFilesToEmit: Set(0) {},
+      requiredFilesToEmitCache: Map(0) {},
+      fileEmitHistory: Map(0) {}
+    },
+    AnyComponentStyleBudgetChecker { budgets: [] },
+    { apply: [Function: apply] },
+    MiniCssExtractPlugin {
+      _sortedModulesCache: WeakMap { <items unknown> },
+      options: {
+        filename: '[name].css',
+        ignoreOrder: false,
+        experimentalUseImportModule: undefined,
+        runtime: true,
+        chunkFilename: '[name].css'
+      },
+      runtimeOptions: {
+        insert: undefined,
+        linkType: 'text/css',
+        attributes: undefined
+      }
+    },
+    SuppressExtractedTextChunksWebpackPlugin {},
+    VirtualModulesPlugin {
+      _compiler: null,
+      _watcher: null,
+      _staticModules: {
+        'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-stories.js': 'const pipeline = (x) => x();\n' +
+          '\n' +
+          'const importers = [\n' +
+          '  async (path) => {\n' +
+          '    if (!/^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.mdx)$/.exec(path)) {\n' +
+          '      return;\n' +
+          '    }\n' +
+          '  \n' +
+          '    const pathRemainder = path.substring(29);\n' +
+          '    return import(\n' +
+          '      /* webpackChunkName: "[request]" */\n' +
+          '      /* webpackInclude: /(?:[\\\\/]projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.mdx)$/ */\n' +
+          "      './projects/ui-components/src/' + pathRemainder\n" +
+          '    );\n' +
+          '  }\n' +
+          '  ,\n' +
+          '  async (path) => {\n' +
+          '    if (!/^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(js|jsx|mjs|ts|tsx))$/.exec(path)) {\n' +
+          '      return;\n' +
+          '    }\n' +
+          '  \n' +
+          '    const pathRemainder = path.substring(29);\n' +
+          '    return import(\n' +
+          '      /* webpackChunkName: "[request]" */\n' +
+          '      /* webpackInclude: /(?:[\\\\/]projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(js|jsx|mjs|ts|tsx))$/ */\n' +
+          "      './projects/ui-components/src/' + pathRemainder\n" +
+          '    );\n' +
+          '  }\n' +
+          '  \n' +
+          '];\n' +
+          '\n' +
+          'export async function importFn(path) {\n' +
+          '  for (let i = 0; i < importers.length; i++) {\n' +
+          '    const moduleExports = await pipeline(() => importers[i](path));\n' +
+          '    if (moduleExports) {\n' +
+          '      return moduleExports;\n' +
+          '    }\n' +
+          '  }\n' +
+          '}',
+        'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-config-entry.js': "import { global } from '@storybook/global';\n" +
+          '\n' +
+          "import { ClientApi, PreviewWeb, addons, composeConfigs } from '@storybook/preview-api';\n" +
+          "import { createBrowserChannel } from '@storybook/channels';\n" +
+          '\n' +
+          "import { importFn } from './storybook-stories.js';\n" +
+          '\n' +
+          'const getProjectAnnotations = () =>\n' +
+          "  composeConfigs([require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\angular\\\\dist\\\\client\\\\docs\\\\config.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\angular\\\\dist\\\\client\\\\config.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-links\\\\dist\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\docs\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\actions\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\backgrounds\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\measure\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\outline\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\highlight\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-interactions\\\\dist\\\\preview.js'),require('C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\projects\\\\ui-components\\\\.storybook\\\\preview.ts'),]);\n" +
+          '\n' +
+          "const channel = createBrowserChannel({ page: 'preview' });\n" +
+          'addons.setChannel(channel);\n' +
+          '\n' +
+          "if (global.CONFIG_TYPE === 'DEVELOPMENT'){\n" +
+          '  window.__STORYBOOK_SERVER_CHANNEL__ = channel;\n' +
+          '}\n' +
+          '\n' +
+          'const preview = new PreviewWeb();\n' +
+          '\n' +
+          'window.__STORYBOOK_PREVIEW__ = preview;\n' +
+          'window.__STORYBOOK_STORY_STORE__ = preview.storyStore;\n' +
+          'window.__STORYBOOK_ADDONS_CHANNEL__ = channel;\n' +
+          'window.__STORYBOOK_CLIENT_API__ = new ClientApi({ storyStore: preview.storyStore });\n' +
+          '\n' +
+          'preview.initialize({ importFn, getProjectAnnotations });\n' +
+          '\n' +
+          'if (import.meta.webpackHot) {\n' +
+          "  import.meta.webpackHot.accept('./storybook-stories.js', () => {\n" +
+          '    // importFn has changed so we need to patch the new one in\n' +
+          '    preview.onStoriesChanged({ importFn });\n' +
+          '  });\n' +
+          '\n' +
+          "  import.meta.webpackHot.accept(['C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\angular\\\\dist\\\\client\\\\docs\\\\config.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\angular\\\\dist\\\\client\\\\config.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-links\\\\dist\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\docs\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\actions\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\backgrounds\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\measure\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\outline\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-essentials\\\\dist\\\\highlight\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\node_modules\\\\@storybook\\\\addon-interactions\\\\dist\\\\preview.js','C:\\\\Users\\\\andrew\\\\Desktop\\\\GitHub\\\\SigamUI\\\\projects\\\\ui-components\\\\.storybook\\\\preview.ts',], () => {\n" +
+          '    // getProjectAnnotations has changed so we need to patch the new one in\n' +
+          '    preview.onGetProjectAnnotationsChanged({ getProjectAnnotations });\n' +
+          '  });\n' +
+          '}'
+      }
+    },
+    HtmlWebpackPlugin {
+      userOptions: {
+        filename: 'iframe.html',
+        chunksSortMode: 'none',
+        alwaysWriteToDisk: true,
+        inject: false,
+        template: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\builder-webpack5\\templates\\preview.ejs',
+        templateParameters: {
+          version: '7.6.6',
+          globals: {
+            CONFIG_TYPE: 'DEVELOPMENT',
+            LOGLEVEL: 'info',
+            FRAMEWORK_OPTIONS: {},
+            CHANNEL_OPTIONS: undefined,
+            FEATURES: {
+              warnOnLegacyHierarchySeparator: true,
+              buildStoriesJson: false,
+              storyStoreV7: true,
+              argTypeTargetsV7: true,
+              legacyDecoratorFileOrder: false,
+              disallowImplicitActionsInRenderV8: false
+            },
+            PREVIEW_URL: undefined,
+            STORIES: [
+              {
+                titlePrefix: '',
+                directory: './projects/ui-components/src',
+                files: '**/*.mdx',
+                importPathMatcher: '^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.mdx)$'
+              },
+              {
+                titlePrefix: '',
+                directory: './projects/ui-components/src',
+                files: '**/*.stories.@(js|jsx|mjs|ts|tsx)',
+                importPathMatcher: '^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(js|jsx|mjs|ts|tsx))$'
+              }
+            ],
+            DOCS_OPTIONS: { defaultName: 'Docs', autodocs: 'tag' }
+          },
+          headHtmlSnippet: '<base target="_parent" />\n' +
+            '\n' +
+            '<style>\n' +
+            "  /* While we aren't showing the main block yet, but still preparing, we want everything the user\n" +
+            '     has rendered, which may or may not be in #storybook-root, to be display none */\n' +
+            '  .sb-show-preparing-story:not(.sb-show-main) > :not(.sb-preparing-story) {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-preparing-docs:not(.sb-show-main) > :not(.sb-preparing-docs) {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            "  /* Hide our own blocks when we aren't supposed to be showing them */\n" +
+            '  :not(.sb-show-preparing-story) > .sb-preparing-story,\n' +
+            '  :not(.sb-show-preparing-docs) > .sb-preparing-docs,\n' +
+            '  :not(.sb-show-nopreview) > .sb-nopreview,\n' +
+            '  :not(.sb-show-errordisplay) > .sb-errordisplay {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-centered {\n' +
+            '    margin: 0;\n' +
+            '    display: flex;\n' +
+            '    align-items: center;\n' +
+            '    min-height: 100vh;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-centered #storybook-root {\n' +
+            '    box-sizing: border-box;\n' +
+            '    margin: auto;\n' +
+            '    padding: 1rem;\n' +
+            '    max-height: 100%; /* Hack for centering correctly in IE11 */\n' +
+            '  }\n' +
+            '\n' +
+            '  /* Vertical centering fix for IE11 */\n' +
+            '  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n' +
+            '    .sb-show-main.sb-main-centered:after {\n' +
+            "      content: '';\n" +
+            '      min-height: inherit;\n' +
+            '      font-size: 0;\n' +
+            '    }\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-fullscreen {\n' +
+            '    margin: 0;\n' +
+            '    padding: 0;\n' +
+            '    display: block;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-padded {\n' +
+            '    margin: 0;\n' +
+            '    padding: 1rem;\n' +
+            '    display: block;\n' +
+            '    box-sizing: border-box;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-wrapper {\n' +
+            '    position: fixed;\n' +
+            '    top: 0;\n' +
+            '    bottom: 0;\n' +
+            '    left: 0;\n' +
+            '    right: 0;\n' +
+            '    padding: 20px;\n' +
+            "    font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco',\n" +
+            "      BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n" +
+            '    -webkit-font-smoothing: antialiased;\n' +
+            '    overflow: auto;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-heading {\n' +
+            '    font-size: 14px;\n' +
+            '    font-weight: 600;\n' +
+            '    letter-spacing: 0.2px;\n' +
+            '    margin: 10px 0;\n' +
+            '    padding-right: 25px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview {\n' +
+            '    display: flex;\n' +
+            '    align-content: center;\n' +
+            '    justify-content: center;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview_main {\n' +
+            '    margin: auto;\n' +
+            '    padding: 30px;\n' +
+            '    border-radius: 10px;\n' +
+            '    background: rgba(0, 0, 0, 0.03);\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview_heading {\n' +
+            '    text-align: center;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay {\n' +
+            '    border: 20px solid rgb(187, 49, 49);\n' +
+            '    background: #222;\n' +
+            '    color: #fff;\n' +
+            '    z-index: 999999;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay_code {\n' +
+            '    padding: 10px;\n' +
+            '    background: #000;\n' +
+            '    color: #eee;\n' +
+            "    font-family: 'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',\n" +
+            "      'Lucida Console', Consolas, Monaco, monospace;\n" +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay pre {\n' +
+            '    white-space: pre-wrap;\n' +
+            '  }\n' +
+            '\n' +
+            '  @-webkit-keyframes sb-rotate360 {\n' +
+            '    from {\n' +
+            '      transform: rotate(0deg);\n' +
+            '    }\n' +
+            '    to {\n' +
+            '      transform: rotate(360deg);\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @keyframes sb-rotate360 {\n' +
+            '    from {\n' +
+            '      transform: rotate(0deg);\n' +
+            '    }\n' +
+            '    to {\n' +
+            '      transform: rotate(360deg);\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @-webkit-keyframes sb-glow {\n' +
+            '    0%,\n' +
+            '    100% {\n' +
+            '      opacity: 1;\n' +
+            '    }\n' +
+            '    50% {\n' +
+            '      opacity: 0.4;\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @keyframes sb-glow {\n' +
+            '    0%,\n' +
+            '    100% {\n' +
+            '      opacity: 1;\n' +
+            '    }\n' +
+            '    50% {\n' +
+            '      opacity: 0.4;\n' +
+            '    }\n' +
+            '  }\n' +
+            '\n' +
+            '  /* We display the preparing loaders *over* the rendering story */\n' +
+            '  .sb-preparing-story,\n' +
+            '  .sb-preparing-docs {\n' +
+            '    background-color: white;\n' +
+            "    /* Maximum possible z-index. It would be better to use stacking contexts to ensure it's always\n" +
+            "    on top, but this isn't possible as it would require making CSS changes that could affect user code */\n" +
+            '    z-index: 2147483647;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-loader {\n' +
+            '    -webkit-animation: sb-rotate360 0.7s linear infinite;\n' +
+            '    animation: sb-rotate360 0.7s linear infinite;\n' +
+            '    border-color: rgba(97, 97, 97, 0.29);\n' +
+            '    border-radius: 50%;\n' +
+            '    border-style: solid;\n' +
+            '    border-top-color: #646464;\n' +
+            '    border-width: 2px;\n' +
+            '    display: inline-block;\n' +
+            '    height: 32px;\n' +
+            '    left: 50%;\n' +
+            '    margin-left: -16px;\n' +
+            '    margin-top: -16px;\n' +
+            '    mix-blend-mode: difference;\n' +
+            '    overflow: hidden;\n' +
+            '    position: absolute;\n' +
+            '    top: 50%;\n' +
+            '    transition: all 200ms ease-out;\n' +
+            '    vertical-align: top;\n' +
+            '    width: 32px;\n' +
+            '    z-index: 4;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock {\n' +
+            '    background: #fff;\n' +
+            '    border: 1px solid rgba(0, 0, 0, 0.1);\n' +
+            '    border-radius: 4px;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;\n' +
+            '    margin: 25px auto 40px;\n' +
+            '    max-width: 600px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_header {\n' +
+            '    align-items: center;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset;\n' +
+            '    display: flex;\n' +
+            '    gap: 14px;\n' +
+            '    height: 40px;\n' +
+            '    padding: 0 12px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_icon {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background: #e6e6e6;\n' +
+            '    height: 14px;\n' +
+            '    width: 14px;\n' +
+            '  }\n' +
+            '  .sb-previewBlock_icon:last-child {\n' +
+            '    margin-left: auto;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_body {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    height: 182px;\n' +
+            '    position: relative;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock {\n' +
+            '    border-collapse: collapse;\n' +
+            '    border-spacing: 0;\n' +
+            '    font-size: 13px;\n' +
+            '    line-height: 20px;\n' +
+            '    margin: 25px auto 40px;\n' +
+            '    max-width: 600px;\n' +
+            '    text-align: left;\n' +
+            '    width: 100%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:first-of-type,\n' +
+            '  .sb-argstableBlock td:first-of-type {\n' +
+            '    padding-left: 20px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:nth-of-type(2),\n' +
+            '  .sb-argstableBlock td:nth-of-type(2) {\n' +
+            '    width: 35%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:nth-of-type(3),\n' +
+            '  .sb-argstableBlock td:nth-of-type(3) {\n' +
+            '    width: 15%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:last-of-type,\n' +
+            '  .sb-argstableBlock td:last-of-type {\n' +
+            '    width: 25%;\n' +
+            '    padding-right: 20px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th span,\n' +
+            '  .sb-argstableBlock td span {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background-color: rgba(0, 0, 0, 0.1);\n' +
+            '    border-radius: 0;\n' +
+            '    box-shadow: none;\n' +
+            '    color: transparent;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th {\n' +
+            '    padding: 10px 15px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-body {\n' +
+            '    border-radius: 4px;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 1px, rgba(0, 0, 0, 0.065) 0 0 0 1px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr {\n' +
+            '    background: transparent;\n' +
+            '    overflow: hidden;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:not(:first-child) {\n' +
+            '    border-top: 1px solid #e6e6e6;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:first-child td:first-child {\n' +
+            '    border-top-left-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:first-child td:last-child {\n' +
+            '    border-top-right-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:last-child td:first-child {\n' +
+            '    border-bottom-left-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:last-child td:last-child {\n' +
+            '    border-bottom-right-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body td {\n' +
+            '    background: #fff;\n' +
+            '    padding-bottom: 10px;\n' +
+            '    padding-top: 10px;\n' +
+            '    vertical-align: top;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body td:not(:first-of-type) {\n' +
+            '    padding-left: 15px;\n' +
+            '    padding-right: 15px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body button {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background-color: rgba(0, 0, 0, 0.1);\n' +
+            '    border: 0;\n' +
+            '    border-radius: 0;\n' +
+            '    box-shadow: none;\n' +
+            '    color: transparent;\n' +
+            '    display: inline;\n' +
+            '    font-size: 12px;\n' +
+            '    line-height: 1;\n' +
+            '    padding: 10px 16px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-summary {\n' +
+            '    margin-top: 4px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-code {\n' +
+            '    margin-right: 4px;\n' +
+            '    margin-bottom: 4px;\n' +
+            '    padding: 2px 5px;\n' +
+            '  }\n' +
+            '</style>\n' +
+            '\n' +
+            '<script>\n' +
+            '  /* globals window */\n' +
+            '  /* eslint-disable no-underscore-dangle */\n' +
+            '  try {\n' +
+            '    if (window.top !== window) {\n' +
+            '      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;\n' +
+            '      window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.top.__VUE_DEVTOOLS_GLOBAL_HOOK__;\n' +
+            '      window.top.__VUE_DEVTOOLS_CONTEXT__ = window.document;\n' +
+            '    }\n' +
+            '  } catch (e) {\n' +
+            '    // eslint-disable-next-line no-console\n' +
+            "    console.warn('unable to connect to top frame for connecting dev tools');\n" +
+            '  }\n' +
+            '</script>\n',
+          bodyHtmlSnippet: '<div class="sb-preparing-story sb-wrapper">\n' +
+            '  <div class="sb-loader"></div>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-preparing-docs sb-wrapper">\n' +
+            '  <div class="sb-previewBlock">\n' +
+            '    <div class="sb-previewBlock_header">\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '    </div>\n' +
+            '    <div class="sb-previewBlock_body">\n' +
+            '      <div class="sb-loader"></div>\n' +
+            '    </div>\n' +
+            '  </div>\n' +
+            '  <table aria-hidden="true" class="sb-argstableBlock">\n' +
+            '    <thead class="sb-argstableBlock-head">\n' +
+            '      <tr>\n' +
+            '        <th><span>Name</span></th>\n' +
+            '        <th><span>Description</span></th>\n' +
+            '        <th><span>Default</span></th>\n' +
+            '        <th><span>Control </span></th>\n' +
+            '      </tr>\n' +
+            '    </thead>\n' +
+            '    <tbody class="sb-argstableBlock-body">\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span title="Required">*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span>*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span>*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '    </tbody>\n' +
+            '  </table>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-nopreview sb-wrapper">\n' +
+            '  <div class="sb-nopreview_main">\n' +
+            '    <h1 class="sb-nopreview_heading sb-heading">No Preview</h1>\n' +
+            '    <p>Sorry, but you either have no stories or none are selected somehow.</p>\n' +
+            '    <ul>\n' +
+            '      <li>Please check the Storybook config.</li>\n' +
+            '      <li>Try reloading the page.</li>\n' +
+            '    </ul>\n' +
+            '    <p>\n' +
+            "      If the problem persists, check the browser console, or the terminal you've run Storybook from.\n" +
+            '    </p>\n' +
+            '  </div>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-errordisplay sb-wrapper">\n' +
+            '  <pre id="error-message" class="sb-heading"></pre>\n' +
+            '  <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>\n' +
+            '</div>\n'
+        },
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: false,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        }
+      },
+      version: 5,
+      options: {
+        template: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\builder-webpack5\\templates\\preview.ejs',
+        templateContent: false,
+        templateParameters: {
+          version: '7.6.6',
+          globals: {
+            CONFIG_TYPE: 'DEVELOPMENT',
+            LOGLEVEL: 'info',
+            FRAMEWORK_OPTIONS: {},
+            CHANNEL_OPTIONS: undefined,
+            FEATURES: {
+              warnOnLegacyHierarchySeparator: true,
+              buildStoriesJson: false,
+              storyStoreV7: true,
+              argTypeTargetsV7: true,
+              legacyDecoratorFileOrder: false,
+              disallowImplicitActionsInRenderV8: false
+            },
+            PREVIEW_URL: undefined,
+            STORIES: [
+              {
+                titlePrefix: '',
+                directory: './projects/ui-components/src',
+                files: '**/*.mdx',
+                importPathMatcher: '^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.mdx)$'
+              },
+              {
+                titlePrefix: '',
+                directory: './projects/ui-components/src',
+                files: '**/*.stories.@(js|jsx|mjs|ts|tsx)',
+                importPathMatcher: '^\\.[\\\\/](?:projects[\\\\/]ui-components[\\\\/]src(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(js|jsx|mjs|ts|tsx))$'
+              }
+            ],
+            DOCS_OPTIONS: { defaultName: 'Docs', autodocs: 'tag' }
+          },
+          headHtmlSnippet: '<base target="_parent" />\n' +
+            '\n' +
+            '<style>\n' +
+            "  /* While we aren't showing the main block yet, but still preparing, we want everything the user\n" +
+            '     has rendered, which may or may not be in #storybook-root, to be display none */\n' +
+            '  .sb-show-preparing-story:not(.sb-show-main) > :not(.sb-preparing-story) {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-preparing-docs:not(.sb-show-main) > :not(.sb-preparing-docs) {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            "  /* Hide our own blocks when we aren't supposed to be showing them */\n" +
+            '  :not(.sb-show-preparing-story) > .sb-preparing-story,\n' +
+            '  :not(.sb-show-preparing-docs) > .sb-preparing-docs,\n' +
+            '  :not(.sb-show-nopreview) > .sb-nopreview,\n' +
+            '  :not(.sb-show-errordisplay) > .sb-errordisplay {\n' +
+            '    display: none;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-centered {\n' +
+            '    margin: 0;\n' +
+            '    display: flex;\n' +
+            '    align-items: center;\n' +
+            '    min-height: 100vh;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-centered #storybook-root {\n' +
+            '    box-sizing: border-box;\n' +
+            '    margin: auto;\n' +
+            '    padding: 1rem;\n' +
+            '    max-height: 100%; /* Hack for centering correctly in IE11 */\n' +
+            '  }\n' +
+            '\n' +
+            '  /* Vertical centering fix for IE11 */\n' +
+            '  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n' +
+            '    .sb-show-main.sb-main-centered:after {\n' +
+            "      content: '';\n" +
+            '      min-height: inherit;\n' +
+            '      font-size: 0;\n' +
+            '    }\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-fullscreen {\n' +
+            '    margin: 0;\n' +
+            '    padding: 0;\n' +
+            '    display: block;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-show-main.sb-main-padded {\n' +
+            '    margin: 0;\n' +
+            '    padding: 1rem;\n' +
+            '    display: block;\n' +
+            '    box-sizing: border-box;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-wrapper {\n' +
+            '    position: fixed;\n' +
+            '    top: 0;\n' +
+            '    bottom: 0;\n' +
+            '    left: 0;\n' +
+            '    right: 0;\n' +
+            '    padding: 20px;\n' +
+            "    font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco',\n" +
+            "      BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n" +
+            '    -webkit-font-smoothing: antialiased;\n' +
+            '    overflow: auto;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-heading {\n' +
+            '    font-size: 14px;\n' +
+            '    font-weight: 600;\n' +
+            '    letter-spacing: 0.2px;\n' +
+            '    margin: 10px 0;\n' +
+            '    padding-right: 25px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview {\n' +
+            '    display: flex;\n' +
+            '    align-content: center;\n' +
+            '    justify-content: center;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview_main {\n' +
+            '    margin: auto;\n' +
+            '    padding: 30px;\n' +
+            '    border-radius: 10px;\n' +
+            '    background: rgba(0, 0, 0, 0.03);\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-nopreview_heading {\n' +
+            '    text-align: center;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay {\n' +
+            '    border: 20px solid rgb(187, 49, 49);\n' +
+            '    background: #222;\n' +
+            '    color: #fff;\n' +
+            '    z-index: 999999;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay_code {\n' +
+            '    padding: 10px;\n' +
+            '    background: #000;\n' +
+            '    color: #eee;\n' +
+            "    font-family: 'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',\n" +
+            "      'Lucida Console', Consolas, Monaco, monospace;\n" +
+            '  }\n' +
+            '\n' +
+            '  .sb-errordisplay pre {\n' +
+            '    white-space: pre-wrap;\n' +
+            '  }\n' +
+            '\n' +
+            '  @-webkit-keyframes sb-rotate360 {\n' +
+            '    from {\n' +
+            '      transform: rotate(0deg);\n' +
+            '    }\n' +
+            '    to {\n' +
+            '      transform: rotate(360deg);\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @keyframes sb-rotate360 {\n' +
+            '    from {\n' +
+            '      transform: rotate(0deg);\n' +
+            '    }\n' +
+            '    to {\n' +
+            '      transform: rotate(360deg);\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @-webkit-keyframes sb-glow {\n' +
+            '    0%,\n' +
+            '    100% {\n' +
+            '      opacity: 1;\n' +
+            '    }\n' +
+            '    50% {\n' +
+            '      opacity: 0.4;\n' +
+            '    }\n' +
+            '  }\n' +
+            '  @keyframes sb-glow {\n' +
+            '    0%,\n' +
+            '    100% {\n' +
+            '      opacity: 1;\n' +
+            '    }\n' +
+            '    50% {\n' +
+            '      opacity: 0.4;\n' +
+            '    }\n' +
+            '  }\n' +
+            '\n' +
+            '  /* We display the preparing loaders *over* the rendering story */\n' +
+            '  .sb-preparing-story,\n' +
+            '  .sb-preparing-docs {\n' +
+            '    background-color: white;\n' +
+            "    /* Maximum possible z-index. It would be better to use stacking contexts to ensure it's always\n" +
+            "    on top, but this isn't possible as it would require making CSS changes that could affect user code */\n" +
+            '    z-index: 2147483647;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-loader {\n' +
+            '    -webkit-animation: sb-rotate360 0.7s linear infinite;\n' +
+            '    animation: sb-rotate360 0.7s linear infinite;\n' +
+            '    border-color: rgba(97, 97, 97, 0.29);\n' +
+            '    border-radius: 50%;\n' +
+            '    border-style: solid;\n' +
+            '    border-top-color: #646464;\n' +
+            '    border-width: 2px;\n' +
+            '    display: inline-block;\n' +
+            '    height: 32px;\n' +
+            '    left: 50%;\n' +
+            '    margin-left: -16px;\n' +
+            '    margin-top: -16px;\n' +
+            '    mix-blend-mode: difference;\n' +
+            '    overflow: hidden;\n' +
+            '    position: absolute;\n' +
+            '    top: 50%;\n' +
+            '    transition: all 200ms ease-out;\n' +
+            '    vertical-align: top;\n' +
+            '    width: 32px;\n' +
+            '    z-index: 4;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock {\n' +
+            '    background: #fff;\n' +
+            '    border: 1px solid rgba(0, 0, 0, 0.1);\n' +
+            '    border-radius: 4px;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;\n' +
+            '    margin: 25px auto 40px;\n' +
+            '    max-width: 600px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_header {\n' +
+            '    align-items: center;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset;\n' +
+            '    display: flex;\n' +
+            '    gap: 14px;\n' +
+            '    height: 40px;\n' +
+            '    padding: 0 12px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_icon {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background: #e6e6e6;\n' +
+            '    height: 14px;\n' +
+            '    width: 14px;\n' +
+            '  }\n' +
+            '  .sb-previewBlock_icon:last-child {\n' +
+            '    margin-left: auto;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-previewBlock_body {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    height: 182px;\n' +
+            '    position: relative;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock {\n' +
+            '    border-collapse: collapse;\n' +
+            '    border-spacing: 0;\n' +
+            '    font-size: 13px;\n' +
+            '    line-height: 20px;\n' +
+            '    margin: 25px auto 40px;\n' +
+            '    max-width: 600px;\n' +
+            '    text-align: left;\n' +
+            '    width: 100%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:first-of-type,\n' +
+            '  .sb-argstableBlock td:first-of-type {\n' +
+            '    padding-left: 20px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:nth-of-type(2),\n' +
+            '  .sb-argstableBlock td:nth-of-type(2) {\n' +
+            '    width: 35%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:nth-of-type(3),\n' +
+            '  .sb-argstableBlock td:nth-of-type(3) {\n' +
+            '    width: 15%;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th:last-of-type,\n' +
+            '  .sb-argstableBlock td:last-of-type {\n' +
+            '    width: 25%;\n' +
+            '    padding-right: 20px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th span,\n' +
+            '  .sb-argstableBlock td span {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background-color: rgba(0, 0, 0, 0.1);\n' +
+            '    border-radius: 0;\n' +
+            '    box-shadow: none;\n' +
+            '    color: transparent;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock th {\n' +
+            '    padding: 10px 15px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-body {\n' +
+            '    border-radius: 4px;\n' +
+            '    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 1px, rgba(0, 0, 0, 0.065) 0 0 0 1px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr {\n' +
+            '    background: transparent;\n' +
+            '    overflow: hidden;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:not(:first-child) {\n' +
+            '    border-top: 1px solid #e6e6e6;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:first-child td:first-child {\n' +
+            '    border-top-left-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:first-child td:last-child {\n' +
+            '    border-top-right-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:last-child td:first-child {\n' +
+            '    border-bottom-left-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body tr:last-child td:last-child {\n' +
+            '    border-bottom-right-radius: 4px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body td {\n' +
+            '    background: #fff;\n' +
+            '    padding-bottom: 10px;\n' +
+            '    padding-top: 10px;\n' +
+            '    vertical-align: top;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body td:not(:first-of-type) {\n' +
+            '    padding-left: 15px;\n' +
+            '    padding-right: 15px;\n' +
+            '  }\n' +
+            '  .sb-argstableBlock-body button {\n' +
+            '    -webkit-animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    animation: sb-glow 1.5s ease-in-out infinite;\n' +
+            '    background-color: rgba(0, 0, 0, 0.1);\n' +
+            '    border: 0;\n' +
+            '    border-radius: 0;\n' +
+            '    box-shadow: none;\n' +
+            '    color: transparent;\n' +
+            '    display: inline;\n' +
+            '    font-size: 12px;\n' +
+            '    line-height: 1;\n' +
+            '    padding: 10px 16px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-summary {\n' +
+            '    margin-top: 4px;\n' +
+            '  }\n' +
+            '\n' +
+            '  .sb-argstableBlock-code {\n' +
+            '    margin-right: 4px;\n' +
+            '    margin-bottom: 4px;\n' +
+            '    padding: 2px 5px;\n' +
+            '  }\n' +
+            '</style>\n' +
+            '\n' +
+            '<script>\n' +
+            '  /* globals window */\n' +
+            '  /* eslint-disable no-underscore-dangle */\n' +
+            '  try {\n' +
+            '    if (window.top !== window) {\n' +
+            '      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;\n' +
+            '      window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.top.__VUE_DEVTOOLS_GLOBAL_HOOK__;\n' +
+            '      window.top.__VUE_DEVTOOLS_CONTEXT__ = window.document;\n' +
+            '    }\n' +
+            '  } catch (e) {\n' +
+            '    // eslint-disable-next-line no-console\n' +
+            "    console.warn('unable to connect to top frame for connecting dev tools');\n" +
+            '  }\n' +
+            '</script>\n',
+          bodyHtmlSnippet: '<div class="sb-preparing-story sb-wrapper">\n' +
+            '  <div class="sb-loader"></div>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-preparing-docs sb-wrapper">\n' +
+            '  <div class="sb-previewBlock">\n' +
+            '    <div class="sb-previewBlock_header">\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '      <div class="sb-previewBlock_icon"></div>\n' +
+            '    </div>\n' +
+            '    <div class="sb-previewBlock_body">\n' +
+            '      <div class="sb-loader"></div>\n' +
+            '    </div>\n' +
+            '  </div>\n' +
+            '  <table aria-hidden="true" class="sb-argstableBlock">\n' +
+            '    <thead class="sb-argstableBlock-head">\n' +
+            '      <tr>\n' +
+            '        <th><span>Name</span></th>\n' +
+            '        <th><span>Description</span></th>\n' +
+            '        <th><span>Default</span></th>\n' +
+            '        <th><span>Control </span></th>\n' +
+            '      </tr>\n' +
+            '    </thead>\n' +
+            '    <tbody class="sb-argstableBlock-body">\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span title="Required">*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span>*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '      <tr>\n' +
+            '        <td><span>propertyName</span><span>*</span></td>\n' +
+            '        <td>\n' +
+            '          <div><span>This is a short description</span></div>\n' +
+            '          <div class="sb-argstableBlock-summary">\n' +
+            '            <div><span class="sb-argstableBlock-code">summary</span></div>\n' +
+            '          </div>\n' +
+            '        </td>\n' +
+            '        <td>\n' +
+            '          <div><span class="sb-argstableBlock-code">defaultValue</span></div>\n' +
+            '        </td>\n' +
+            '        <td><button>Set string</button></td>\n' +
+            '      </tr>\n' +
+            '    </tbody>\n' +
+            '  </table>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-nopreview sb-wrapper">\n' +
+            '  <div class="sb-nopreview_main">\n' +
+            '    <h1 class="sb-nopreview_heading sb-heading">No Preview</h1>\n' +
+            '    <p>Sorry, but you either have no stories or none are selected somehow.</p>\n' +
+            '    <ul>\n' +
+            '      <li>Please check the Storybook config.</li>\n' +
+            '      <li>Try reloading the page.</li>\n' +
+            '    </ul>\n' +
+            '    <p>\n' +
+            "      If the problem persists, check the browser console, or the terminal you've run Storybook from.\n" +
+            '    </p>\n' +
+            '  </div>\n' +
+            '</div>\n' +
+            '\n' +
+            '<div class="sb-errordisplay sb-wrapper">\n' +
+            '  <pre id="error-message" class="sb-heading"></pre>\n' +
+            '  <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>\n' +
+            '</div>\n'
+        },
+        filename: 'iframe.html',
+        publicPath: 'auto',
+        hash: false,
+        inject: false,
+        scriptLoading: 'defer',
+        compile: true,
+        favicon: false,
+        minify: {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: false,
+          removeStyleLinkTypeAttributes: true,
+          useShortDoctype: true
+        },
+        cache: true,
+        showErrors: true,
+        chunks: 'all',
+        excludeChunks: [],
+        chunksSortMode: 'none',
+        meta: {},
+        base: false,
+        title: 'Webpack App',
+        xhtml: false,
+        alwaysWriteToDisk: true
+      }
+    },
+    DefinePlugin {
+      definitions: {
+        'process.env.NODE_ENV': '"production"',
+        'process.env.NODE_PATH': '[]',
+        'process.env.STORYBOOK': '"true"',
+        'process.env.PUBLIC_URL': '"."',
+        NODE_ENV: undefined
+      }
+    },
+    ProvidePlugin {
+      definitions: {
+        process: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\process\\browser.js'
+      }
+    },
+    HotModuleReplacementPlugin { options: {} },
+    CaseSensitivePathsPlugin {
+      options: {},
+      logger: Object [console] {
+        log: [Function (anonymous)],
+        warn: [Function (anonymous)],
+        dir: [Function: dir],
+        time: [Function: time],
+        timeEnd: [Function: timeEnd],
+        timeLog: [Function: timeLog],
+        trace: [Function: trace],
+        assert: [Function: assert],
+        clear: [Function: clear],
+        count: [Function: count],
+        countReset: [Function: countReset],
+        group: [Function: group],
+        groupEnd: [Function: groupEnd],
+        table: [Function: table],
+        debug: [Function: debug],
+        info: [Function (anonymous)],
+        dirxml: [Function: dirxml],
+        error: [Function (anonymous)],
+        groupCollapsed: [Function: groupCollapsed],
+        Console: [Function: Console],
+        profile: [Function: profile],
+        profileEnd: [Function: profileEnd],
+        timeStamp: [Function: timeStamp],
+        context: [Function: context],
+        createTask: [Function: createTask]
+      },
+      pathCache: Map(0) {},
+      fsOperations: 0,
+      primed: false
+    },
+    ProgressPlugin {
+      profile: false,
+      handler: undefined,
+      modulesCount: 1000,
+      dependenciesCount: 10000,
+      showEntries: true,
+      showModules: true,
+      showDependencies: true,
+      showActiveModules: false,
+      percentBy: undefined
+    },
+    { apply: [Function: apply] },
+    StorybookNormalizeAngularEntryPlugin { options: undefined }
+  ],
+  module: {
+    unknownContextCritical: false,
+    rules: [
+      {
+        test: /\.?(svg|html)$/,
+        resourceQuery: /\?ngResource/,
+        type: 'asset/source'
+      },
+      { test: /[/\\]rxjs[/\\]add[/\\].+\.js$/, sideEffects: true },
+      {
+        test: /\.[cm]?[tj]sx?$/,
+        resolve: { fullySpecified: false },
+        exclude: [
+          /[\\/]node_modules[/\\](?:core-js|@babel|tslib|web-animations-js|web-streams-polyfill|whatwg-url)[/\\]/
+        ],
+        use: [
+          {
+            loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@angular-devkit\\build-angular\\src\\tools\\babel\\webpack-loader.js',
+            options: {
+              cacheDirectory: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\.angular\\cache\\17.0.7\\babel-webpack',
+              aot: false,
+              optimize: false,
+              supportedBrowsers: [
+                'chrome 120',        'chrome 119',
+                'edge 120',          'edge 119',
+                'firefox 120',       'firefox 115',
+                'ios_saf 17.1',      'ios_saf 17.0',
+                'ios_saf 16.6-16.7', 'ios_saf 16.5',
+                'ios_saf 16.4',      'ios_saf 16.3',
+                'ios_saf 16.2',      'ios_saf 16.1',
+                'ios_saf 16.0',      'safari 17.2',
+                'safari 17.1',       'safari 17.0',
+                'safari 16.6',       'safari 16.5',
+                'safari 16.4',       'safari 16.3',
+                'safari 16.2',       'safari 16.1',
+                'safari 16.0'
+              ],
+              instrumentCode: undefined
+            }
+          }
+        ]
+      },
+      {
+        test: /\.[cm]?tsx?$/,
+        loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@ngtools\\webpack\\src\\ivy\\index.js',
+        exclude: [
+          /[\\/]node_modules[/\\](?:css-loader|mini-css-extract-plugin|webpack-dev-server|webpack)[/\\]/
+        ]
+      },
+      {
+        test: /\.(?:css)$/i,
+        rules: [
+          {
+            oneOf: [
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: { url: false, sourceMap: false, importLoaders: 1 }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false },
+                      sourceMap: false
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngGlobalStyle/
+              },
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: {
+                      url: false,
+                      sourceMap: false,
+                      importLoaders: 1,
+                      exportType: 'string',
+                      esModule: false
+                    }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false }
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngResource/
+              }
+            ]
+          },
+          { use: [] }
+        ]
+      },
+      {
+        test: /\.(?:scss)$/i,
+        rules: [
+          {
+            oneOf: [
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: { url: false, sourceMap: false, importLoaders: 1 }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false },
+                      sourceMap: false
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngGlobalStyle/
+              },
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: {
+                      url: false,
+                      sourceMap: false,
+                      importLoaders: 1,
+                      exportType: 'string',
+                      esModule: false
+                    }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false }
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngResource/
+              }
+            ]
+          },
+          {
+            use: [
+              {
+                loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\resolve-url-loader\\index.js',
+                options: { sourceMap: false }
+              },
+              {
+                loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\sass-loader\\dist\\cjs.js',
+                options: {
+                  sourceMap: true,
+                  api: 'modern',
+                  implementation: SassWorkerImplementation {
+                    rebase: false,
+                    workers: [],
+                    availableWorkers: [],
+                    requests: Map(0) {},
+                    workerPath: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@angular-devkit\\build-angular\\src\\tools\\sass\\worker.js',
+                    idCounter: 1,
+                    nextWorkerIndex: 0
+                  },
+                  webpackImporter: false,
+                  sassOptions: [Function: sassOptions]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        test: /\.(?:sass)$/i,
+        rules: [
+          {
+            oneOf: [
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: { url: false, sourceMap: false, importLoaders: 1 }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false },
+                      sourceMap: false
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngGlobalStyle/
+              },
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: {
+                      url: false,
+                      sourceMap: false,
+                      importLoaders: 1,
+                      exportType: 'string',
+                      esModule: false
+                    }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false }
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngResource/
+              }
+            ]
+          },
+          {
+            use: [
+              {
+                loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\resolve-url-loader\\index.js',
+                options: { sourceMap: false }
+              },
+              {
+                loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\sass-loader\\dist\\cjs.js',
+                options: {
+                  sourceMap: true,
+                  api: 'modern',
+                  implementation: SassWorkerImplementation {
+                    rebase: false,
+                    workers: [],
+                    availableWorkers: [],
+                    requests: Map(0) {},
+                    workerPath: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@angular-devkit\\build-angular\\src\\tools\\sass\\worker.js',
+                    idCounter: 1,
+                    nextWorkerIndex: 0
+                  },
+                  webpackImporter: false,
+                  sassOptions: [Function: sassOptions]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        test: /\.(?:less)$/i,
+        rules: [
+          {
+            oneOf: [
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: { url: false, sourceMap: false, importLoaders: 1 }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false },
+                      sourceMap: false
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngGlobalStyle/
+              },
+              {
+                use: [
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\css-loader\\dist\\cjs.js',
+                    options: {
+                      url: false,
+                      sourceMap: false,
+                      importLoaders: 1,
+                      exportType: 'string',
+                      esModule: false
+                    }
+                  },
+                  {
+                    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\postcss-loader\\dist\\cjs.js',
+                    options: {
+                      implementation: <ref *18> [Function: postcss] {
+                        plugin: [Function: plugin],
+                        stringify: <ref *1> [Function: stringify] {
+                          default: [Circular *1]
+                        },
+                        parse: <ref *2> [Function: parse] {
+                          default: [Circular *2]
+                        },
+                        fromJSON: <ref *3> [Function: fromJSON] {
+                          default: [Circular *3]
+                        },
+                        list: <ref *4> {
+                          comma: [Function: comma],
+                          space: [Function: space],
+                          split: [Function: split],
+                          default: [Circular *4]
+                        },
+                        comment: [Function (anonymous)],
+                        atRule: [Function (anonymous)],
+                        decl: [Function (anonymous)],
+                        rule: [Function (anonymous)],
+                        root: [Function (anonymous)],
+                        document: [Function (anonymous)],
+                        CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                          default: [Circular *5]
+                        },
+                        Declaration: <ref *6> [class Declaration extends Node] {
+                          default: [Circular *6]
+                        },
+                        Container: <ref *7> [class Container extends Node] {
+                          registerParse: [Function (anonymous)],
+                          registerRule: [Function (anonymous)],
+                          registerAtRule: [Function (anonymous)],
+                          registerRoot: [Function (anonymous)],
+                          default: [Circular *7],
+                          rebuild: [Function (anonymous)]
+                        },
+                        Processor: <ref *8> [class Processor] {
+                          default: [Circular *8]
+                        },
+                        Document: <ref *9> [class Document extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *9]
+                        },
+                        Comment: <ref *10> [class Comment extends Node] {
+                          default: [Circular *10]
+                        },
+                        Warning: <ref *11> [class Warning] {
+                          default: [Circular *11]
+                        },
+                        AtRule: <ref *12> [class AtRule extends Container] {
+                          default: [Circular *12]
+                        },
+                        Result: <ref *13> [class Result] {
+                          default: [Circular *13]
+                        },
+                        Input: <ref *14> [class Input] {
+                          default: [Circular *14]
+                        },
+                        Rule: <ref *15> [class Rule extends Container] {
+                          default: [Circular *15]
+                        },
+                        Root: <ref *16> [class Root extends Container] {
+                          registerLazyResult: [Function (anonymous)],
+                          registerProcessor: [Function (anonymous)],
+                          default: [Circular *16]
+                        },
+                        Node: <ref *17> [class Node] {
+                          default: [Circular *17]
+                        },
+                        default: [Circular *18]
+                      },
+                      postcssOptions: [Function: optionGenerator] { config: false }
+                    }
+                  }
+                ],
+                resourceQuery: /\?ngResource/
+              }
+            ]
+          },
+          {
+            use: [
+              {
+                loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\less-loader\\dist\\cjs.js',
+                options: {
+                  implementation: {
+                    node: [Function (anonymous)],
+                    color: [Function (anonymous)],
+                    atrule: [Function (anonymous)],
+                    detachedruleset: [Function (anonymous)],
+                    operation: [Function (anonymous)],
+                    dimension: [Function (anonymous)],
+                    unit: [Function (anonymous)],
+                    keyword: [Function (anonymous)],
+                    variable: [Function (anonymous)],
+                    property: [Function (anonymous)],
+                    ruleset: [Function (anonymous)],
+                    element: [Function (anonymous)],
+                    attribute: [Function (anonymous)],
+                    combinator: [Function (anonymous)],
+                    selector: [Function (anonymous)],
+                    quoted: [Function (anonymous)],
+                    expression: [Function (anonymous)],
+                    declaration: [Function (anonymous)],
+                    call: [Function (anonymous)],
+                    url: [Function (anonymous)],
+                    import: [Function (anonymous)],
+                    comment: [Function (anonymous)],
+                    anonymous: [Function (anonymous)],
+                    value: [Function (anonymous)],
+                    javascript: [Function (anonymous)],
+                    assignment: [Function (anonymous)],
+                    condition: [Function (anonymous)],
+                    paren: [Function (anonymous)],
+                    media: [Function (anonymous)],
+                    container: [Function (anonymous)],
+                    queryinparens: [Function (anonymous)],
+                    unicodedescriptor: [Function (anonymous)],
+                    negative: [Function (anonymous)],
+                    extend: [Function (anonymous)],
+                    variablecall: [Function (anonymous)],
+                    namespacevalue: [Function (anonymous)],
+                    mixin: [Object: null prototype] {
+                      call: [Function (anonymous)],
+                      definition: [Function (anonymous)]
+                    },
+                    createFromEnvironment: [Function: default_1],
+                    lesscHelper: {
+                      stylize: [Function: stylize],
+                      printUsage: [Function: printUsage]
+                    },
+                    PluginLoader: [Function: PluginLoader],
+                    fs: {
+                      appendFile: [Function: appendFile],
+                      appendFileSync: [Function: appendFileSync],
+                      access: [Function: access],
+                      accessSync: [Function: accessSync],
+                      chown: [Function (anonymous)],
+                      chownSync: [Function (anonymous)],
+                      chmod: [Function (anonymous)],
+                      chmodSync: [Function (anonymous)],
+                      close: [Function: close],
+                      closeSync: [Function: closeSync],
+                      copyFile: [Function: copyFile],
+                      copyFileSync: [Function: copyFileSync],
+                      cp: [Function: cp],
+                      cpSync: [Function: cpSync],
+                      createReadStream: [Function: createReadStream],
+                      createWriteStream: [Function: createWriteStream],
+                      exists: [Function: exists],
+                      existsSync: [Function: existsSync],
+                      fchown: [Function (anonymous)],
+                      fchownSync: [Function (anonymous)],
+                      fchmod: [Function (anonymous)],
+                      fchmodSync: [Function (anonymous)],
+                      fdatasync: [Function: fdatasync],
+                      fdatasyncSync: [Function: fdatasyncSync],
+                      fstat: [Function (anonymous)],
+                      fstatSync: [Function (anonymous)],
+                      fsync: [Function: fsync],
+                      fsyncSync: [Function: fsyncSync],
+                      ftruncate: [Function: ftruncate],
+                      ftruncateSync: [Function: ftruncateSync],
+                      futimes: [Function: futimes],
+                      futimesSync: [Function: futimesSync],
+                      lchown: [Function (anonymous)],
+                      lchownSync: [Function (anonymous)],
+                      lchmod: [Function (anonymous)],
+                      lchmodSync: [Function (anonymous)],
+                      link: [Function: link],
+                      linkSync: [Function: linkSync],
+                      lstat: [Function (anonymous)],
+                      lstatSync: [Function (anonymous)],
+                      lutimes: [Function: lutimes],
+                      lutimesSync: [Function: lutimesSync],
+                      mkdir: [Function: mkdir],
+                      mkdirSync: [Function: mkdirSync],
+                      mkdtemp: [Function: mkdtemp],
+                      mkdtempSync: [Function: mkdtempSync],
+                      open: [Function: open],
+                      openSync: [Function: openSync],
+                      openAsBlob: [Function: openAsBlob],
+                      readdir: [Function: readdir],
+                      readdirSync: [Function: readdirSync],
+                      read: [Function: read],
+                      readSync: [Function (anonymous)],
+                      readv: [Function: readv],
+                      readvSync: [Function: readvSync],
+                      readFile: [Function: readFile],
+                      readFileSync: [Function: readFileSync],
+                      readlink: [Function: readlink],
+                      readlinkSync: [Function: readlinkSync],
+                      realpath: [Function: realpath] {
+                        native: [Function (anonymous)]
+                      },
+                      realpathSync: [Function: realpathSync] {
+                        native: [Function (anonymous)]
+                      },
+                      rename: [Function: rename],
+                      renameSync: [Function: renameSync],
+                      rm: [Function: rm],
+                      rmSync: [Function: rmSync],
+                      rmdir: [Function: rmdir],
+                      rmdirSync: [Function: rmdirSync],
+                      stat: [Function (anonymous)],
+                      statfs: [Function: statfs],
+                      statSync: [Function (anonymous)],
+                      statfsSync: [Function: statfsSync],
+                      symlink: [Function: symlink],
+                      symlinkSync: [Function: symlinkSync],
+                      truncate: [Function: truncate],
+                      truncateSync: [Function: truncateSync],
+                      unwatchFile: [Function: unwatchFile],
+                      unlink: [Function: unlink],
+                      unlinkSync: [Function: unlinkSync],
+                      utimes: [Function: utimes],
+                      utimesSync: [Function: utimesSync],
+                      watch: [Function: watch],
+                      watchFile: [Function: watchFile],
+                      writeFile: [Function: writeFile],
+                      writeFileSync: [Function: writeFileSync],
+                      write: [Function: write],
+                      writeSync: [Function: writeSync],
+                      writev: [Function: writev],
+                      writevSync: [Function: writevSync],
+                      Dirent: [class Dirent],
+                      Stats: [Function: Stats],
+                      ReadStream: [Getter/Setter],
+                      WriteStream: [Getter/Setter],
+                      FileReadStream: [Getter/Setter],
+                      FileWriteStream: [Getter/Setter],
+                      _toUnixTimestamp: [Function: toUnixTimestamp],
+                      Dir: [class Dir],
+                      opendir: [Function: opendir],
+                      opendirSync: [Function: opendirSync],
+                      F_OK: 0,
+                      R_OK: 4,
+                      W_OK: 2,
+                      X_OK: 1,
+                      constants: [Object: null prototype] {
+                        UV_FS_SYMLINK_DIR: 1,
+                        UV_FS_SYMLINK_JUNCTION: 2,
+                        O_RDONLY: 0,
+                        O_WRONLY: 1,
+                        O_RDWR: 2,
+                        UV_DIRENT_UNKNOWN: 0,
+                        UV_DIRENT_FILE: 1,
+                        UV_DIRENT_DIR: 2,
+                        UV_DIRENT_LINK: 3,
+                        UV_DIRENT_FIFO: 4,
+                        UV_DIRENT_SOCKET: 5,
+                        UV_DIRENT_CHAR: 6,
+                        UV_DIRENT_BLOCK: 7,
+                        EXTENSIONLESS_FORMAT_JAVASCRIPT: 0,
+                        EXTENSIONLESS_FORMAT_WASM: 1,
+                        S_IFMT: 61440,
+                        S_IFREG: 32768,
+                        S_IFDIR: 16384,
+                        S_IFCHR: 8192,
+                        S_IFIFO: 4096,
+                        S_IFLNK: 40960,
+                        O_CREAT: 256,
+                        O_EXCL: 1024,
+                        UV_FS_O_FILEMAP: 536870912,
+                        O_TRUNC: 512,
+                        O_APPEND: 8,
+                        S_IRUSR: 256,
+                        S_IWUSR: 128,
+                        F_OK: 0,
+                        R_OK: 4,
+                        W_OK: 2,
+                        X_OK: 1,
+                        UV_FS_COPYFILE_EXCL: 1,
+                        COPYFILE_EXCL: 1,
+                        UV_FS_COPYFILE_FICLONE: 2,
+                        COPYFILE_FICLONE: 2,
+                        UV_FS_COPYFILE_FICLONE_FORCE: 4,
+                        COPYFILE_FICLONE_FORCE: 4
+                      },
+                      promises: [Getter],
+                      gracefulify: [Function: patch]
+                    },
+                    FileManager: [Function: FileManager],
+                    UrlFileManager: [Function: UrlFileManager],
+                    options: {
+                      javascriptEnabled: false,
+                      depends: false,
+                      compress: false,
+                      lint: false,
+                      paths: [],
+                      color: true,
+                      strictImports: false,
+                      insecure: false,
+                      rootpath: '',
+                      rewriteUrls: false,
+                      math: 1,
+                      strictUnits: false,
+                      globalVars: null,
+                      modifyVars: null,
+                      urlArgs: ''
+                    }
+                  },
+                  sourceMap: false,
+                  lessOptions: { javascriptEnabled: true, paths: [] }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        test: /\.stories\.([tj])sx?$|(stories|story)\.mdx$/,
+        enforce: 'post',
+        use: [
+          {
+            loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\builder-webpack5\\dist\\loaders\\export-order-loader.js'
+          }
+        ]
+      },
+      { test: /\.m?js$/, type: 'javascript/auto' },
+      { test: /\.m?js$/, resolve: { fullySpecified: false } },
+      {
+        test: /\.(mjs|jsx?)$/,
+        use: [
+          {
+            loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\babel-loader\\lib\\index.js',
+            options: {
+              cacheDirectory: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\.cache\\storybook\\babel'
+            }
+          }
+        ],
+        include: [ 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI' ],
+        exclude: [
+          /node_modules/,
+          'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-stories.js',
+          'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-config-entry.js'
+        ]
+      },
+      { test: /\.md$/, type: 'asset/source' },
+      {
+        test: /(stories|story)\.mdx$/,
+        use: [
+          {
+            loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\mdx2-csf\\loader.js',
+            options: {
+              skipCsf: false,
+              mdxCompileOptions: {
+                providerImportSource: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\addon-docs\\dist\\shims\\mdx-react-shim',
+                remarkPlugins: [ [Function: slug], [Function: externalLinks] ]
+              },
+              jsxOptions: {}
+            }
+          }
+        ]
+      },
+      {
+        test: /\.mdx$/,
+        exclude: /(stories|story)\.mdx$/,
+        use: [
+          {
+            loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\mdx2-csf\\loader.js',
+            options: {
+              skipCsf: true,
+              mdxCompileOptions: {
+                providerImportSource: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\addon-docs\\dist\\shims\\mdx-react-shim',
+                remarkPlugins: [ [Function: slug], [Function: externalLinks] ]
+              },
+              jsxOptions: {}
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(svg|ico|jpg|jpeg|png|apng|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+        type: 'asset/resource',
+        generator: { filename: 'static/media/[path][name][ext]' }
+      },
+      {
+        test: /\.(mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
+        type: 'asset',
+        parser: { dataUrlCondition: { maxSize: 10000 } },
+        generator: { filename: 'static/media/[path][name][ext]' }
+      },
+      { resourceQuery: /raw/, type: 'asset/source' },
+      {
+        exclude: /node_modules/,
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ],
+        include: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components\\node_modules\\primeng\\resources'
+      }
+    ]
+  },
+  resolve: {
+    extensions: [
+      '.mjs', '.js',
+      '.jsx', '.ts',
+      '.tsx', '.json',
+      '.cjs'
+    ],
+    modules: [
+      'node_modules',
+      'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components'
+    ],
+    mainFields: [ 'browser', 'module', 'main' ],
+    alias: {
+      '@storybook/api': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\manager-api',
+      '@storybook/manager-api': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\manager-api',
+      '@storybook/components': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\components',
+      '@storybook/global': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\global',
+      '@storybook/router': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\router',
+      '@storybook/theming': 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@storybook\\theming',
+      '@storybook/react-dom-shim': '@storybook/react-dom-shim/dist/react-18'
+    },
+    fallback: {
+      crypto: false,
+      assert: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\browser-assert\\lib\\assert.js',
+      stream: false,
+      path: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\path-browserify\\index.js',
+      util: 'util',
+      url: 'url',
+      fs: false,
+      constants: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\constants-browserify\\constants.json'
+    },
+    symlinks: true,
+    plugins: [
+      TsconfigPathsPlugin {
+        source: 'described-resolve',
+        target: 'resolve',
+        extensions: [ '.ts', '.tsx' ],
+        referenceMatchMap: {},
+        log: {
+          log: [Function (anonymous)],
+          logInfo: [Function: doNothingLogger],
+          logWarning: [Function (anonymous)],
+          logError: [Function (anonymous)]
+        },
+        baseUrl: undefined,
+        absoluteBaseUrl: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components\\.storybook',
+        matchPath: [Function (anonymous)]
+      }
+    ]
+  },
+  optimization: {
+    splitChunks: { chunks: 'all' },
+    runtimeChunk: true,
+    sideEffects: true,
+    usedExports: false,
+    moduleIds: 'named'
+  },
+  performance: { hints: false },
+  experiments: {},
+  resolveLoader: { symlinks: true }
+}
+info => Starting manager..
+info => Starting preview..
+info Using Babel compiler
+info Addon-docs: using MDX2
+info => Using implicit CSS loaders
+info => Using angular browser target options from "UiComponents:build"
+info => Using angular project with "tsConfig:C:\Users\andrew\Desktop\GitHub\SigamUI\projects\ui-components\.storybook\tsconfig.json"
+andref [
+  {
+    test: /\.?(svg|html)$/,
+    resourceQuery: /\?ngResource/,
+    type: 'asset/source'
+  },
+  { test: /[/\\]rxjs[/\\]add[/\\].+\.js$/, sideEffects: true },
+  {
+    test: /\.[cm]?[tj]sx?$/,
+    resolve: { fullySpecified: false },
+    exclude: [
+      /[\\/]node_modules[/\\](?:core-js|@babel|tslib|web-animations-js|web-streams-polyfill|whatwg-url)[/\\]/
+    ],
+    use: [ [Object] ]
+  },
+  {
+    test: /\.[cm]?tsx?$/,
+    loader: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\node_modules\\@ngtools\\webpack\\src\\ivy\\index.js',
+    exclude: [
+      /[\\/]node_modules[/\\](?:css-loader|mini-css-extract-plugin|webpack-dev-server|webpack)[/\\]/
+    ]
+  },
+  { test: /\.(?:css)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:scss)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:sass)$/i, rules: [ [Object], [Object] ] },
+  { test: /\.(?:less)$/i, rules: [ [Object], [Object] ] },
+  {
+    test: /\.stories\.([tj])sx?$|(stories|story)\.mdx$/,
+    enforce: 'post',
+    use: [ [Object] ]
+  },
+  { test: /\.m?js$/, type: 'javascript/auto' },
+  { test: /\.m?js$/, resolve: { fullySpecified: false } },
+  {
+    test: /\.(mjs|jsx?)$/,
+    use: [ [Object] ],
+    include: [ 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI' ],
+    exclude: [
+      /node_modules/,
+      'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-stories.js',
+      'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\storybook-config-entry.js'
+    ]
+  },
+  { test: /\.md$/, type: 'asset/source' },
+  { test: /(stories|story)\.mdx$/, use: [ [Object] ] },
+  {
+    test: /\.mdx$/,
+    exclude: /(stories|story)\.mdx$/,
+    use: [ [Object] ]
+  },
+  {
+    test: /\.(svg|ico|jpg|jpeg|png|apng|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+    type: 'asset/resource',
+    generator: { filename: 'static/media/[path][name][ext]' }
+  },
+  {
+    test: /\.(mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
+    type: 'asset',
+    parser: { dataUrlCondition: [Object] },
+    generator: { filename: 'static/media/[path][name][ext]' }
+  },
+  { resourceQuery: /raw/, type: 'asset/source' },
+  {
+    exclude: /node_modules/,
+    test: /\.css$/,
+    use: [ 'style-loader', 'css-loader' ],
+    include: 'C:\\Users\\andrew\\Desktop\\GitHub\\SigamUI\\projects\\ui-components\\node_modules\\primeng\\resources'
+  }
+]
+info => Using default Webpack5 setup
+ERROR in ./node_modules/primeng/resources/primeng.min.css 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> .p-overflow-hidden{overflow:hidden;padding-right:var(--scrollbar-width)}@layer primeng{.p-component,.p-component *{box-sizing:border-box}.p-hidden{display:none}.p-hidden-space{visibility:hidden}.p-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.p-hidden-accessible input,.p-hidden-accessible select{transform:scale(0)}.p-reset{margin:0;padding:0;border:0;outline:0;text-decoration:none;font-size:100%;list-style:none}.p-disabled,.p-disabled *{cursor:default !important;pointer-events:none}.p-component-overlay{position:fixed;top:0;left:0;width:100%;height:100%}.p-unselectable-text{user-select:none}.p-scrollbar-measure{width:100px;height:100px;overflow:scroll;position:absolute;top:-9999px}@-webkit-keyframes p-fadein{0%{opacity:0}100%{opacity:1}}@keyframes p-fadein{0%{opacity:0}100%{opacity:1}}input[type='button'],input[type='submit'],input[type='reset'],input[type='file']::-webkit-file-upload-button,button{border-radius:0}.p-link{text-align:left;background-color:transparent;margin:0;padding:0;border:0;cursor:pointer;user-select:none}.p-link:disabled{cursor:default}.p-sr-only{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important}.p-connected-overlay{opacity:0;transform:scaleY(0.8);transition:transform .12s cubic-bezier(0,0,0.2,1),opacity .12s cubic-bezier(0,0,0.2,1)}.p-connected-overlay-visible{opacity:1;transform:scaleY(1)}.p-connected-overlay-hidden{opacity:0;transform:scaleY(1);transition:opacity .1s linear}.p-toggleable-content.ng-animating{overflow:hidden}.p-icon-wrapper{display:inline-flex}.p-icon{display:inline-block}.p-icon-spin{-webkit-animation:p-icon-spin 2s infinite linear;animation:p-icon-spin 2s infinite linear}}@-webkit-keyframes p-icon-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes p-icon-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@layer primeng{.p-badge{display:inline-block;border-radius:10px;text-align:center;padding:0 .5rem}.p-overlay-badge{position:relative}.p-overlay-badge .p-badge{position:absolute;top:0;right:0;transform:translate(50%,-50%);transform-origin:100% 0;margin:0}.p-badge-dot{width:.5rem;min-width:.5rem;height:.5rem;border-radius:50%;padding:0}.p-badge-no-gutter{padding:0;border-radius:50%}}@layer primeng{.p-button{margin:0;display:inline-flex;cursor:pointer;user-select:none;align-items:center;vertical-align:bottom;text-align:center;overflow:hidden;position:relative}.p-button-label{flex:1 1 auto}.p-button-icon-right{order:1}.p-button:disabled{cursor:default;pointer-events:none}.p-button-icon-only{justify-content:center}.p-button-icon-only:after{content:'p';visibility:hidden;clip:rect(0 0 0 0);width:0}.p-button-vertical{flex-direction:column}.p-button-icon-bottom{order:2}.p-buttonset .p-button{margin:0}.p-buttonset .p-button:not(:last-child){border-right:0 none}.p-buttonset .p-button:not(:first-of-type):not(:last-of-type){border-radius:0}.p-buttonset .p-button:first-of-type{border-top-right-radius:0;border-bottom-right-radius:0}.p-buttonset .p-button:last-of-type{border-top-left-radius:0;border-bottom-left-radius:0}.p-buttonset .p-button:focus{position:relative;z-index:1}p-button[iconpos='right'] spinnericon{order:1}}@layer primeng{.p-checkbox{display:inline-flex;cursor:pointer;user-select:none;vertical-align:bottom;position:relative}.p-checkbox-disabled{cursor:default !important;pointer-events:none}.p-checkbox-box{display:flex;justify-content:center;align-items:center}p-checkbox{display:inline-flex;vertical-align:bottom;align-items:center}.p-checkbox-label{line-height:1}}.p-colorpicker-panel .p-colorpicker-color{background:transparent url("./images/color.png") no-repeat left top}.p-colorpicker-panel .p-colorpicker-hue{background:transparent url("./images/hue.png") no-repeat left top}@layer primeng{.p-inputtext{margin:0}.p-fluid .p-inputtext{width:100%}.p-inputgroup{display:flex;align-items:stretch;width:100%}.p-inputgroup-addon{display:flex;align-items:center;justify-content:center}.p-inputgroup .p-float-label{display:flex;align-items:stretch;width:100%}.p-inputgroup .p-inputtext,.p-fluid .p-inputgroup .p-inputtext,.p-inputgroup .p-inputwrapper,.p-inputgroup .p-inputwrapper>.p-component{flex:1 1 auto;width:1%}.p-float-label{display:block;position:relative}.p-float-label label{position:absolute;pointer-events:none;top:50%;margin-top:-0.5rem;transition-property:all;transition-timing-function:ease;line-height:1}.p-float-label textarea ~ label{top:1rem}.p-float-label input:focus ~ label,.p-float-label input.p-filled ~ label,.p-float-label textarea:focus ~ label,.p-float-label textarea.p-filled ~ label,.p-float-label .p-inputwrapper-focus ~ label,.p-float-label .p-inputwrapper-filled ~ label{top:-0.75rem;font-size:12px}.p-float-label .input:-webkit-autofill ~ label{top:-20px;font-size:12px}.p-float-label .p-placeholder,.p-float-label input::placeholder,.p-float-label .p-inputtext::placeholder{opacity:0;transition-property:all;transition-timing-function:ease}.p-float-label .p-focus .p-placeholder,.p-float-label input:focus::placeholder,.p-float-label .p-inputtext:focus::placeholder{opacity:1;transition-property:all;transition-timing-function:ease}.p-input-icon-left,.p-input-icon-right{position:relative;display:inline-block}.p-input-icon-left>i,.p-input-icon-left>.p-icon-wrapper,.p-input-icon-right>i,.p-input-icon-right>.p-icon-wrapper{position:absolute;top:50%;margin-top:-0.5rem}.p-fluid .p-input-icon-left,.p-fluid .p-input-icon-right{display:block;width:100%}}@layer primeng{.p-inputtextarea-resizable{overflow:hidden;resize:none}.p-fluid .p-inputtextarea{width:100%}}@layer primeng{.p-password{position:relative;display:inline-flex}.p-password-panel{position:absolute;top:0;left:0}.p-password .p-password-panel{min-width:100%}.p-password-meter{height:10px}.p-password-strength{height:100%;width:0;transition:width 1s ease-in-out}.p-fluid .p-password{display:flex}.p-password-input::-ms-reveal,.p-password-input::-ms-clear{display:none}.p-password-clear-icon{position:absolute;top:50%;margin-top:-0.5rem;cursor:pointer}.p-password-clearable.p-password-mask .p-password-clear-icon{margin-top:unset}.p-password-clearable{position:relative}}@layer primeng{.p-radiobutton{display:inline-flex;cursor:pointer;user-select:none;vertical-align:bottom;position:relative}.p-radiobutton-box{display:flex;justify-content:center;align-items:center}.p-radiobutton-icon{-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:translateZ(0) scale(0.1);border-radius:50%;visibility:hidden}.p-radiobutton-box.p-highlight .p-radiobutton-icon{transform:translateZ(0) scale(1,1);visibility:visible}p-radiobutton{display:inline-flex;vertical-align:bottom;align-items:center}.p-radiobutton-label{line-height:1}}@layer primeng{.p-ripple{overflow:hidden;position:relative}.p-ink{display:block;position:absolute;background:rgba(255,255,255,0.5);border-radius:100%;transform:scale(0)}.p-ink-active{animation:ripple .4s linear}.p-ripple-disabled .p-ink{display:none !important}}@keyframes ripple{100%{opacity:0;transform:scale(2.5)}}@layer primeng{.p-tooltip{position:absolute;display:none;padding:.25em .5rem;max-width:12.5rem;pointer-events:none}.p-tooltip.p-tooltip-right,.p-tooltip.p-tooltip-left{padding:0 .25rem}.p-tooltip.p-tooltip-top,.p-tooltip.p-tooltip-bottom{padding:.25em 0}.p-tooltip .p-tooltip-text{white-space:pre-line;word-break:break-word}.p-tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}.p-tooltip-right .p-tooltip-arrow{top:50%;left:0;margin-top:-0.25rem;border-width:.25em .25em .25em 0}.p-tooltip-left .p-tooltip-arrow{top:50%;right:0;margin-top:-0.25rem;border-width:.25em 0 .25em .25rem}.p-tooltip.p-tooltip-top{padding:.25em 0}.p-tooltip-top .p-tooltip-arrow{bottom:0;left:50%;margin-left:-0.25rem;border-width:.25em .25em 0}.p-tooltip-bottom .p-tooltip-arrow{top:0;left:50%;margin-left:-0.25rem;border-width:0 .25em .25rem}}
+ @ ./projects/ui-components/src/styles.css 2:0-43
+ @ ./projects/ui-components/.storybook/preview.ts 2:0-27
+ @ ./storybook-config-entry.js 5:1288-1391 31:2-36:4 31:1276-36:3
+
+ERROR in ./node_modules/primeng/resources/themes/saga-blue/theme.css 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> :root {
+|   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+|   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+ @ ./projects/ui-components/src/styles.css 1:0-54
+ @ ./projects/ui-components/.storybook/preview.ts 2:0-27
+ @ ./storybook-config-entry.js 5:1288-1391 31:2-36:4 31:1276-36:3
+
+preview compiled with 2 errors
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/button/button.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/calendar/calendar.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/card/card.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/checkbox/checkbox.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/confirmbox/confirmbox.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/dropdown/dropdown.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/multiselect/multiselect.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/nav/nav.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/paginator/paginator.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/table/table.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/tabmenu/tabmenu.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/components/toast/toast.module.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.component.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/lib/ui-components.service.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN C:/Users/andrew/Desktop/GitHub/SigamUI/projects/ui-components/src/public-api.ts is part of the TypeScript compilation but it's unused.
+WARN Add only entry points to the 'files' or 'include' properties in your tsconfig.
+WARN DefinePlugin
+WARN Conflicting values for 'process.env.NODE_ENV'
+=> Failed to build the preview
+WARN Force closed preview build
+SB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+Run Storybook with --debug-webpack for more information.
+    at starter (.\node_modules\@storybook\builder-webpack5\dist\index.js:1:9660)
+    at starter.next (<anonymous>)
+    at Module.start (.\node_modules\@storybook\builder-webpack5\dist\index.js:1:11692)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+[?25l[2K[1G[36m?[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m»[39m [90m(Y/n)[39m[2K[1G[2K[1G[31m×[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m...[39m yes
+[?25hTerminate batch job (Y/N)? 

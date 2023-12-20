@@ -1,0 +1,3382 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "TableColumn",
+            "id": "interface-TableColumn-8bc6f24f15262b6ca28010088506980d65650b3f587240a702eba8fab77b02a50bbb1b13f9fa3e6179e11b1bd0f4ec0f958085a00f1b0ec2371110e3f7e9af92",
+            "file": "projects/ui-components/src/lib/components/table/table.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\nexport interface TableColumn {\n  header: string; // O nome a ser exibido no cabeçalho da coluna\n  field: string;  // A chave correspondente no objeto de dados\n}\n\n@Component({\n  selector: 'sigam-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.css']\n})\nexport class TableComponent {\n  @Input() columns: TableColumn[] = [];\n  @Input() data: any[] = []; // Os dados da tabela\n\n}\n",
+            "properties": [
+                {
+                    "name": "field",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "header",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "UiComponentsService",
+            "id": "injectable-UiComponentsService-f664d7d88fd3ed8a22d30b41162773eb193641f5c53ddbda710c65c52e498a09285e85c67ba399bca7a28162f5cf78e7cd909dca40dc858546d543718af045f2",
+            "file": "projects/ui-components/src/lib/ui-components.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UiComponentsService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-94834dd742de93203ab367e02eece9c106804735354f927f91d5fd98da4eddba16b4a0fc12e44c5557de708af09ee078b3619a72178c92a48363df85ce8af70a",
+            "file": "projects/ui-components/src/lib/components/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-button",
+            "styleUrls": [
+                "./button.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "badge",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "badgeClass",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "iconPos",
+                    "defaultValue": "'left'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "link",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "loadingIcon",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "outlined",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "plain",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "raised",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "rounded",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "severity",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "\"small\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "style",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "any | null",
+                    "decorators": []
+                },
+                {
+                    "name": "styleClass",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "EventEmitter<Event>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleClick",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'sigam-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css']\n})\nexport class ButtonComponent {\n  @Input() type: string = '';\n  @Input() iconPos: string = 'left';\n  @Input() icon: string | null = null;\n  @Input() badge: string | null = null;\n  @Input() label?: string = '';\n  @Input() disabled: boolean = false;\n  @Input() loading: boolean = false;\n  @Input() loadingIcon: string | null = null;\n  @Input() raised: boolean = false;\n  @Input() rounded: boolean = false;\n  @Input() text: boolean = false;\n  @Input() plain: boolean = false;\n  @Input() severity: string | null = null;\n  @Input() outlined: boolean = false;\n  @Input() link: boolean = false;\n  @Input() size?: 'small' | 'large';\n  @Input() style: any | null = null;\n  @Input() styleClass: string  = '';\n  @Input() badgeClass: string | null = null;\n  @Input() ariaLabel: string | null = null;\n\n  @Output() onClick: EventEmitter<Event> = new EventEmitter<Event>();\n\n  handleClick(event: Event) {\n    this.onClick.emit(event);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p-button     [type]=\"type\"\n              [label]=\"label\"\n              [disabled]=\"disabled\"\n              [loading]=\"loading\"\n              [raised]=\"raised\"\n              [rounded]=\"rounded\"\n              [text]=\"text\"\n              [plain]=\"plain\"\n              [outlined]=\"outlined\"\n              [size]=\"size\"\n              [link]=\"link\"\n              [style]=\"style\"\n              [styleClass]=\"styleClass\"\n              (onClick)=\"onClick.emit($event)\">\n  </p-button>\n"
+        },
+        {
+            "name": "CalendarComponent",
+            "id": "component-CalendarComponent-aa71d7273251623b9f33c9a62bf252fdab8d12dac9158f635a3ae5e9ddd64daa26b27b28340976ed338fa32271d61755874717cd440110f0bebb94677409ba06",
+            "file": "projects/ui-components/src/lib/components/calendar/calendar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => CalendarComponent), multi: true\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "sigam-calendar",
+            "styleUrls": [
+                "./calendar.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./calendar.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "dateFormat",
+                    "defaultValue": "'dd/mm/yy'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "dateChange",
+                    "defaultValue": "new EventEmitter<Date>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "dateValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Date",
+                    "optional": true,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "onChange",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "onTouch",
+                    "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onDateChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 34,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "Date",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "Date",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector: 'sigam-calendar',\n  templateUrl: './calendar.component.html',\n  styleUrls: ['./calendar.component.css'],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CalendarComponent),\n      multi: true\n    }\n  ]\n})\nexport class CalendarComponent implements ControlValueAccessor {\n  @Input() dateFormat: string = 'dd/mm/yy'; // Formato da data\n  // Você pode adicionar mais propriedades @Input conforme necessário\n\n  @Output() dateChange = new EventEmitter<Date>(); // Emitido quando a data muda\n\n  dateValue?: Date; // O valor da data internamente\n\n  // ControlValueAccessor methods\n  onChange: any = () => {};\n  onTouch: any = () => {};\n\n  writeValue(value: Date): void {\n    this.dateValue = value;\n    this.onChange(value);\n    this.onTouch(value);\n  }\n\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: any): void {\n    this.onTouch = fn;\n  }\n\n  onDateChange(event: any): void {\n    this.dateChange.emit(this.dateValue);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./calendar.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "ControlValueAccessor"
+            ],
+            "templateData": "<p-calendar [(ngModel)]=\"dateValue\" (ngModelChange)=\"onDateChange($event)\" [dateFormat]=\"dateFormat\"></p-calendar>\n"
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-1bd1c408ebcdfad715511506d1f9a58b0d91fc84ad19f803268a23f3dc55e325ed30431e8248768575f154c07d8abbb1eb922a9ca745a72663f363f86ee9ff54",
+            "file": "projects/ui-components/src/lib/components/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-card",
+            "styleUrls": [
+                "./card.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "footer",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "subtitle",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'sigam-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n  @Input() title?: string;\n  @Input() subtitle?: string;\n  @Input() footer?: string;\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./card.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p-card>\n  <ng-container *ngIf=\"title\">\n    <div class=\"p-card-header\">{{ title }}</div>\n  </ng-container>\n  <ng-container *ngIf=\"subtitle\">\n    <div class=\"p-card-subheader\">{{ subtitle }}</div>\n  </ng-container>\n  <div class=\"p-card-content\">\n    <ng-content></ng-content>\n  </div>\n  <ng-container *ngIf=\"footer\">\n    <div class=\"p-card-footer\">{{ footer }}</div>\n  </ng-container>\n</p-card>\n"
+        },
+        {
+            "name": "CheckboxComponent",
+            "id": "component-CheckboxComponent-a0bd170a4bbb302655b7c678ce1a53a1c1a444c0336f9aeeaf08381ef9326d3f1189815490d7e00be967c62bba0549f8a0b864b1923984e80d11a00785254253",
+            "file": "projects/ui-components/src/lib/components/checkbox/checkbox.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-checkbox",
+            "styleUrls": [
+                "./checkbox.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "inputId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "checkedChange",
+                    "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'sigam-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.css']\n})\nexport class CheckboxComponent {\n\n  @Input() label?: string;\n  @Input() value: any;\n  @Input() inputId?: string;\n  @Input() checked?: boolean = false;\n\n  @Output() checkedChange = new EventEmitter<boolean>();\n\n  handleChange(event: any) {\n    this.checkedChange.emit(event.checked);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./checkbox.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"flex align-items-center\">\n  <p-checkbox [label]=\"label\" [value]=\"value\" [(ngModel)]=\"checked\" (onChange)=\"handleChange($event)\" [inputId]=\"inputId\"></p-checkbox>\n</div>\n"
+        },
+        {
+            "name": "ConfirmboxComponent",
+            "id": "component-ConfirmboxComponent-076ee77ed691aaa1927efbdba57ac226380e3385a8bf54ac0d2e5437c58d07cbe1f12a482dc60cafd46cb86aa4378ac328141ea77de2816174226889e68927b0",
+            "file": "projects/ui-components/src/lib/components/confirmbox/confirmbox.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "ConfirmationService",
+                    "type": "injectable"
+                },
+                {
+                    "name": "MessageService",
+                    "type": "injectable"
+                }
+            ],
+            "selector": "sigam-confirmbox",
+            "styleUrls": [
+                "./confirmbox.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./confirmbox.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "confirm1",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "confirm2",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { ConfirmationService, MessageService } from 'primeng/api';\n\n@Component({\n  selector: 'sigam-confirmbox',\n  templateUrl: './confirmbox.component.html',\n  styleUrls: ['./confirmbox.component.css'],\n  providers: [ConfirmationService, MessageService]\n})\nexport class ConfirmboxComponent {\n\n  constructor(private confirmationService: ConfirmationService, private messageService: MessageService) {}\n\n  confirm1() {\n    this.confirmationService.confirm({\n      message: 'Confirmar acao ?',\n      accept: () => {\n        this.messageService.add({severity:'info', summary:'Confirm', detail:'Voce aceitou'});\n      }\n    });\n  }\n\n  confirm2() {\n    this.confirmationService.confirm({\n      message: 'Tens certeza da delecao ?',\n      header: 'Confirmacao de Delete',\n      icon: 'pi pi-info-circle',\n      accept: () => {\n        this.messageService.add({severity:'info', summary:'Confirm', detail:'Dado Deletado!'});\n      },\n      reject: () => {\n        this.messageService.add({severity:'info', summary:'Reject', detail:'Voce Negou'});\n      }\n    });\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./confirmbox.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "confirmationService",
+                        "type": "ConfirmationService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "messageService",
+                        "type": "MessageService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "confirmationService",
+                        "type": "ConfirmationService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "messageService",
+                        "type": "MessageService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<p-toast></p-toast>\n<p-confirmDialog></p-confirmDialog>\n<p-button (click)=\"confirm1()\" icon=\"pi pi-check\" label=\"Confirm\"></p-button>\n<p-button\n  (click)=\"confirm2()\"\n  icon=\"pi pi-times\"\n  label=\"Delete\"\n  styleClass=\"p-button-danger\"\n></p-button>\n"
+        },
+        {
+            "name": "DropdownComponent",
+            "id": "component-DropdownComponent-1fdc9ab481af8fa6dca7245e0d5f65eef9dac43f22c226643e2ff72305167521be2aded5744a289c4cacfa44995ef607a2a3e4dbedae2634a649cf305aec7ffb",
+            "file": "projects/ui-components/src/lib/components/dropdown/dropdown.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-dropdown",
+            "styleUrls": [
+                "./dropdown.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./dropdown.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "options",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "any[]",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "defaultValue": "'Select an option'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "selectedOption",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "showClear",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "selectedOptionChange",
+                    "defaultValue": "new EventEmitter<any>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'sigam-dropdown',\n  templateUrl: './dropdown.component.html',\n  styleUrls: ['./dropdown.component.css']\n})\nexport class DropdownComponent{\n  @Input() options?: any[];\n  @Input() selectedOption: any;\n  @Input() showClear: boolean = true;\n  @Input() placeholder: string = 'Select an option';\n\n  @Output() selectedOptionChange = new EventEmitter<any>();\n\n  handleChange(event: any) {\n    this.selectedOptionChange.emit(event.value);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./dropdown.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"card flex justify-content-center\">\n  <p-dropdown [options]=\"options\" [(ngModel)]=\"selectedOption\" (onChange)=\"handleChange($event)\" optionLabel=\"name\" [showClear]=\"showClear\" [placeholder]=\"placeholder\"></p-dropdown>\n</div>\n"
+        },
+        {
+            "name": "MultiselectComponent",
+            "id": "component-MultiselectComponent-9b0fef31802e8c0ca741db58de65503e76dcf4a4b01122ea74b0cbdc66d5ed5f8f25d2e0a1f08da9c4a80dfd232011f0ad843804f1470720475f27e83f43861a",
+            "file": "projects/ui-components/src/lib/components/multiselect/multiselect.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-multiselect",
+            "styleUrls": [
+                "./multiselect.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./multiselect.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "optionLabel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "any[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "selectionChange",
+                    "defaultValue": "new EventEmitter<any[]>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "selectedValues",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onSelectionChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'sigam-multiselect',\n  templateUrl: './multiselect.component.html',\n  styleUrls: ['./multiselect.component.css']\n})\nexport class MultiselectComponent {\n  @Input() options: any[] = []; // As opções para o multiselect\n  @Input() optionLabel?: string; // O campo a ser usado como label\n\n  @Output() selectionChange = new EventEmitter<any[]>(); // Emitido quando a seleção muda\n\n  ngOnInit() {\n    console.log('option', this.options)\n    console.log('optionlabe', this.optionLabel)\n  }\n\n  selectedValues: any[] = []; // Os valores selecionados internamente\n\n  // Quando a seleção muda, emite o evento de mudança\n  onSelectionChange(event: any) {\n    console.log('Selection Changed:', this.selectedValues);\n    this.selectionChange.emit(this.selectedValues);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./multiselect.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p-multiSelect [options]=\"options\" [(ngModel)]=\"selectedValues\" (onChange)=\"onSelectionChange($event)\" [optionLabel]=\"optionLabel\"></p-multiSelect>\n"
+        },
+        {
+            "name": "NavComponent",
+            "id": "component-NavComponent-b879cd708ec33f3a7020d984f4b45e353c4edbae9ce7b207e1d996cf60edd4c093bf6bad5bdc87a5106f88abcf7d8d3217ad3ba961807426aa9c3e2fc445b9e3",
+            "file": "projects/ui-components/src/lib/components/nav/nav.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-nav",
+            "styleUrls": [
+                "./nav.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./nav.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "model",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "MenuItem[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { MenuItem } from 'primeng/api';\n\n@Component({\n  selector: 'sigam-nav',\n  templateUrl: './nav.component.html',\n  styleUrls: ['./nav.component.css']\n})\nexport class NavComponent implements OnInit {\n  @Input() model?: MenuItem[];\n\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./nav.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 10
+            },
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p-menubar [model]=\"model\"></p-menubar>\n"
+        },
+        {
+            "name": "PaginatorComponent",
+            "id": "component-PaginatorComponent-5bb1313813d835b8021d3985d20271d6b27e4efec27ed6ab12f30c5ead7fef480ad12d7e1452c8b432a962dac125b6e5fb6ac453c77eb58a831fe3de870b279e",
+            "file": "projects/ui-components/src/lib/components/paginator/paginator.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-paginator",
+            "styleUrls": [
+                "./paginator.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./paginator.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "first",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "rows",
+                    "defaultValue": "10",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "rowsPerPageOptions",
+                    "defaultValue": "[10, 20, 30]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "number[]",
+                    "decorators": []
+                },
+                {
+                    "name": "totalRecords",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "pageChange",
+                    "defaultValue": "new EventEmitter<any>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "emitPageChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'sigam-paginator',\n  templateUrl: './paginator.component.html',\n  styleUrls: ['./paginator.component.css']\n})\nexport class PaginatorComponent {\n  @Input() first: number = 0;\n  @Input() rows: number = 10;\n  @Input() totalRecords: number = 0;\n  @Input() rowsPerPageOptions: number[] = [10, 20, 30];\n\n  @Output() pageChange = new EventEmitter<any>();\n\n  emitPageChange(event: any) {\n    this.pageChange.emit(event);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./paginator.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p-paginator (onPageChange)=\"emitPageChange($event)\" [first]=\"first\" [rows]=\"rows\" [totalRecords]=\"totalRecords\" [rowsPerPageOptions]=\"rowsPerPageOptions\"></p-paginator>\n"
+        },
+        {
+            "name": "TableComponent",
+            "id": "component-TableComponent-8bc6f24f15262b6ca28010088506980d65650b3f587240a702eba8fab77b02a50bbb1b13f9fa3e6179e11b1bd0f4ec0f958085a00f1b0ec2371110e3f7e9af92",
+            "file": "projects/ui-components/src/lib/components/table/table.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-table",
+            "styleUrls": [
+                "./table.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./table.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "columns",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "TableColumn[]",
+                    "decorators": []
+                },
+                {
+                    "name": "data",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "any[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\nexport interface TableColumn {\n  header: string; // O nome a ser exibido no cabeçalho da coluna\n  field: string;  // A chave correspondente no objeto de dados\n}\n\n@Component({\n  selector: 'sigam-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.css']\n})\nexport class TableComponent {\n  @Input() columns: TableColumn[] = [];\n  @Input() data: any[] = []; // Os dados da tabela\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./table.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p-table [value]=\"data\">\n  <ng-template pTemplate=\"header\">\n    <tr>\n      <th *ngFor=\"let col of columns\">{{ col.header }}</th>\n    </tr>\n  </ng-template>\n  <ng-template pTemplate=\"body\" let-item>\n    <tr>\n      <td *ngFor=\"let col of columns\">{{ item[col.field] }}</td>\n    </tr>\n  </ng-template>\n</p-table>\n"
+        },
+        {
+            "name": "TabmenuComponent",
+            "id": "component-TabmenuComponent-141e86d2ee67f272d290b0c04efd7fa32eb73a70f72b35f95b08fe8aa4e15849390a73fa13704daf5ca1052d9fd5f36db0066434485900cf3f621746c6142157",
+            "file": "projects/ui-components/src/lib/components/tabmenu/tabmenu.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sigam-tabmenu",
+            "styleUrls": [
+                "./tabmenu.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./tabmenu.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "defaultActiveItem",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "MenuItem",
+                    "decorators": []
+                },
+                {
+                    "name": "items",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "MenuItem[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "activeItemChange",
+                    "defaultValue": "new EventEmitter<MenuItem>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onActiveItemChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { MenuItem } from 'primeng/api';\nimport { TabMenu } from 'primeng/tabmenu';\n\n@Component({\n  selector: 'sigam-tabmenu',\n  templateUrl: './tabmenu.component.html',\n  styleUrls: ['./tabmenu.component.css']\n})\nexport class TabmenuComponent extends TabMenu {\n  @Input() items: MenuItem[] = [];\n  @Input() defaultActiveItem?: MenuItem;\n\n  @Output() override activeItemChange = new EventEmitter<MenuItem>();\n\n  onActiveItemChange(event: any) {\n    // Certifique-se de extrair o valor correto do evento\n    const activeItem = event.value; // ou event.item, dependendo de como o PrimeNG emite o evento\n    this.activeItemChange.emit(activeItem);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./tabmenu.component.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [
+                "TabMenu"
+            ],
+            "templateData": "<p-tabMenu [model]=\"items\" [activeItem]=\"defaultActiveItem\" (onChange)=\"onActiveItemChange($event)\"></p-tabMenu>\n"
+        },
+        {
+            "name": "ToastComponent",
+            "id": "component-ToastComponent-c4029c57e3dca1fc9b36458e21c58d3c88c7e1a7db5c320d4bf64c1b6bfe999874599ae5bea04ed3dbc7febd46052de98b1f9c086a5e6885aa7555b2894ccd60",
+            "file": "projects/ui-components/src/lib/components/toast/toast.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "MessageService",
+                    "type": "injectable"
+                }
+            ],
+            "selector": "sigam-toast",
+            "styleUrls": [
+                "./toast.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./toast.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "message",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "literal type",
+                    "decorators": []
+                },
+                {
+                    "name": "position",
+                    "defaultValue": "'top-center'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "ToastPositionType",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "showToast",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { MessageService } from 'primeng/api';\nimport { ToastPositionType } from 'primeng/toast';\n\n@Component({\n  selector: 'sigam-toast',\n  templateUrl: './toast.component.html',\n  styleUrls: ['./toast.component.css'],\n  providers: [MessageService]\n})\nexport class ToastComponent {\n  @Input() position?: ToastPositionType = 'top-center';\n  @Input() message?: { severity: string, summary: string, detail: string };\n\n  constructor(private messageService: MessageService) {}\n\n  showToast() {\n    if (this.message) {\n      this.messageService.add({\n        key: 'custom',\n        severity: this.message.severity,\n        summary: this.message.summary,\n        detail: this.message.detail\n      });\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./toast.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "messageService",
+                        "type": "MessageService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 13,
+                "jsdoctags": [
+                    {
+                        "name": "messageService",
+                        "type": "MessageService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<p-toast position=\"top-center\" key=\"custom\"></p-toast>\n"
+        },
+        {
+            "name": "UiComponentsComponent",
+            "id": "component-UiComponentsComponent-8477527d0acdbc226ba125f179212863d4bd23d34244cbbdfc878ebcebb494f6ca04bc5b3d6f4a3563c20e48ee0372b1793388ff5f8dde786f9d30cc3a60e28c",
+            "file": "projects/ui-components/src/lib/ui-components.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-UiComponents",
+            "styleUrls": [],
+            "styles": [
+                ""
+            ],
+            "template": "<p>\n  ui-components works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-UiComponents',\n  standalone: true,\n  imports: [],\n  template: `\n    <p>\n      ui-components works!\n    </p>\n  `,\n  styles: ``\n})\nexport class UiComponentsComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "\n",
+            "extends": []
+        }
+    ],
+    "modules": [
+        {
+            "name": "SigamButtonModule",
+            "id": "module-SigamButtonModule-6a77ae2d8dde22bbb658af9582c1a959dbcf944ec1a0b60011f4a6f48535e46a79e3c0c8aec8f3dcca5366d86f313080543f82e71277a6b9e4d3d9ead21885cc",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/button/button.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { ButtonModule } from 'primeng/button';\nimport { ButtonComponent } from './button.component';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    ButtonModule\n  ],\n  declarations: [ButtonComponent],\n  exports:[ButtonComponent]\n})\nexport class SigamButtonModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamCalendarModule",
+            "id": "module-SigamCalendarModule-2c89c1c1d578f1b5f5d3e6d63f58d40005fc034c39e59247619445346587feace9340fbd4f3bc48d0c0fd649d00225e7d06ca29ce270121163b1a900045112a7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/calendar/calendar.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { CalendarModule } from 'primeng/calendar';\nimport { CalendarComponent } from './calendar.component';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    CalendarModule\n  ],\n  declarations: [CalendarComponent],\n  exports: [CalendarComponent]\n})\nexport class SigamCalendarModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "CalendarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "CalendarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamCardModule",
+            "id": "module-SigamCardModule-f99fe5515ea113ee45dc05000fd3d469bcb2d79e498a396f8333a62aeeff2bc215b0c48da5073dddd77d0248ccf1895be47f996a1d684c2b5d845fad7035254c",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/card/card.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { CardModule } from 'primeng/card';\nimport { CardComponent } from './card.component';\n\n\n\n@NgModule({\n  declarations: [CardComponent],\n  imports: [\n    CommonModule,\n    CardModule\n  ],\n  exports: [CardComponent]\n})\nexport class SigamCardModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "CardComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "CardComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamCheckboxModule",
+            "id": "module-SigamCheckboxModule-b4a18645d9cccd96d5490b3683ed38b4ce35ca4560aad001f295bdfa45dc624ad6c7b7a08fd54b21b9ea3b5c69ab69dc1a0f942b0e5619107d98f709cd1f8327",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/checkbox/checkbox.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { CheckboxModule } from 'primeng/checkbox';\nimport { CheckboxComponent } from './checkbox.component';\n\n\n\n@NgModule({\n  declarations: [CheckboxComponent],\n  imports: [\n    CommonModule,\n    CheckboxModule,\n    FormsModule\n  ],\n  exports: [CheckboxComponent]\n})\nexport class SigamCheckboxModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "CheckboxComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "CheckboxComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamConfirmboxModule",
+            "id": "module-SigamConfirmboxModule-0701ada20447b5e4aa7f3688ea64988a8835b8d8b74285768a7116359aa1795b74d83baa825a53f84ff0cc9ed34c63e87d7ef37777667c48b373ffa933dea94e",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/confirmbox/confirmbox.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { ButtonModule } from 'primeng/button';\nimport { ConfirmDialogModule } from 'primeng/confirmdialog';\nimport { ToastModule } from 'primeng/toast';\nimport { ConfirmboxComponent } from './confirmbox.component';\n\n\n\n@NgModule({\n  declarations: [ConfirmboxComponent],\n  imports: [\n    CommonModule,\n    ToastModule,\n    ConfirmDialogModule,\n    ButtonModule,\n  ],\n  exports: [ConfirmboxComponent]\n})\nexport class SigamConfirmboxModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ConfirmboxComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ConfirmboxComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamDropdownModule",
+            "id": "module-SigamDropdownModule-dbfc45a8b73209c4c3785f09d12d115f066d3ec3414fb0f608151336ee3c891ec4cc82c50619f7307a826a1e5ef4aa30647f726ba8ed40930c2cd99bf80d1c0f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/dropdown/dropdown.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { DropdownModule } from 'primeng/dropdown';\nimport { DropdownComponent } from './dropdown.component';\n\n\n\n@NgModule({\n  declarations: [DropdownComponent],\n  imports: [\n    CommonModule,\n    DropdownModule,\n    FormsModule,\n  ],\n  exports: [DropdownComponent]\n})\nexport class SigamDropdownModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "DropdownComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "DropdownComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamMultiselectModule",
+            "id": "module-SigamMultiselectModule-9da9a5a5059fe7f9617f04ca60fef431647913962f311c0164a429f6ea46283ba91f8b87a034aada80e4bae621e886e1e60ceb8644c70473197790d1740735b1",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/multiselect/multiselect.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { MultiSelectModule } from 'primeng/multiselect';\nimport { MultiselectComponent } from './multiselect.component';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    FormsModule,\n    MultiSelectModule\n  ],\n  declarations: [MultiselectComponent],\n  exports: [MultiselectComponent]\n})\n\nexport class SigamMultiselectModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "MultiselectComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "MultiselectComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamNavModule",
+            "id": "module-SigamNavModule-70514ad4b1ad2f2e70c90268333b7287fd9ea30348017b2955a2431e01dfa81182faca2eb0752530c8507eea23d911c2c998661cb01ca1c111b6912c1ee05d76",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/nav/nav.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { MenubarModule } from 'primeng/menubar';\nimport { NavComponent } from './nav.component';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    MenubarModule,\n  ],\n  declarations: [NavComponent],\n  exports: [NavComponent]\n})\nexport class SigamNavModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "NavComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "NavComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamPaginatorModule",
+            "id": "module-SigamPaginatorModule-bce611f6931d143b955ed1b12e7a1a0e6c0054b3f4d1ce479dce3f32bc8f9712014415ff9e3a1756b772d2d33253fec123668423f254f21ea8cddc212151df68",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/paginator/paginator.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { PaginatorModule } from 'primeng/paginator';\nimport { PaginatorComponent } from './paginator.component';\n\n\n\n@NgModule({\n  declarations: [PaginatorComponent],\n  imports: [\n    CommonModule,\n    PaginatorModule\n  ],\n  exports: [PaginatorComponent]\n})\nexport class SigamPaginatorModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "PaginatorComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "PaginatorComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamTableModule",
+            "id": "module-SigamTableModule-e202147938035866f053504f496beb055d96bc1a51f37fe1386c2ba49c0c1cdd6a30ac6bc9e9ddcf8bf91d419e33170a27f224d838a6c2cf2eca522a5796280f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/table/table.module.ts",
+            "methods": [],
+            "sourceCode": "\nimport { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { TableModule } from 'primeng/table';\nimport { TableComponent } from './table.component';\n\n\n@NgModule({\n  declarations: [TableComponent],\n  imports: [\n    CommonModule,\n    TableModule\n  ],\n  exports: [TableComponent]\n})\nexport class SigamTableModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TableComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TableComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamTabmenuModule",
+            "id": "module-SigamTabmenuModule-4a4907a7a87992be15c693e976984ec9dea4f316bd1295ceb4af93731cfa90cdbacc1fa7fea69fd85d033942d7256db332bceb295edf51779ab34dd0ead57c5f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/tabmenu/tabmenu.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { TabMenuModule } from 'primeng/tabmenu';\nimport { TabmenuComponent } from './tabmenu.component';\n\n\n\n@NgModule({\n  declarations: [TabmenuComponent],\n  imports: [\n    CommonModule,\n    TabMenuModule\n  ],\n  exports: [TabmenuComponent]\n})\nexport class SigamTabmenuModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TabmenuComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TabmenuComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SigamToastModule",
+            "id": "module-SigamToastModule-487ae6013fc7cc1b6f4e6bd5d1f211dee5ab5245979c3d9f9f9d6cd1c9ec12ca0abb42a187a6bfabd9301a1fd60f23a2e1128fe0a906709cc0c812d6c1df92e8",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/components/toast/toast.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { ToastModule } from 'primeng/toast';\nimport { ToastComponent } from './toast.component';\n\n\n@NgModule({\n  imports: [\n    CommonModule,\n    ToastModule\n  ],\n  declarations: [ToastComponent],\n  exports: [ToastComponent]\n})\nexport class SigamToastModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ToastComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ToastComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiComponentsModule",
+            "id": "module-UiComponentsModule-5ade3e4740465feeaa64dc3115d32383322c7762abc9017943503cc8b3fd930b541d3850946f6d864ece8858459b9babe0f0ff3e28381a533b7a26adc1778dd8",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-components/src/lib/ui-components.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { SigamButtonModule } from './components/button/button.module';\nimport { SigamCalendarModule } from './components/calendar/calendar.module';\nimport { SigamCardModule } from './components/card/card.module';\nimport { SigamCheckboxModule } from './components/checkbox/checkbox.module';\nimport { SigamConfirmboxModule } from './components/confirmbox/confirmbox.module';\nimport { SigamDropdownModule } from './components/dropdown/dropdown.module';\nimport { SigamMultiselectModule } from './components/multiselect/multiselect.module';\nimport { SigamNavModule } from './components/nav/nav.module';\nimport { SigamPaginatorModule } from './components/paginator/paginator.module';\nimport { SigamTableModule } from './components/table/table.module';\nimport { SigamTabmenuModule } from './components/tabmenu/tabmenu.module';\nimport { SigamToastModule } from './components/toast/toast.module';\n\n@NgModule({\n  imports: [\n    CommonModule,\n    SigamButtonModule,\n    SigamCalendarModule,\n    SigamCardModule,\n    SigamCheckboxModule,\n    SigamConfirmboxModule,\n    SigamDropdownModule,\n    SigamMultiselectModule,\n    SigamNavModule,\n    SigamPaginatorModule,\n    SigamTableModule,\n    SigamTabmenuModule,\n    SigamToastModule,\n  ],\n  declarations: [],\n  exports: [\n    SigamButtonModule,\n    SigamCalendarModule,\n    SigamCardModule,\n    SigamCheckboxModule,\n    SigamConfirmboxModule,\n    SigamDropdownModule,\n    SigamMultiselectModule,\n    SigamNavModule,\n    SigamPaginatorModule,\n    SigamTableModule,\n    SigamTabmenuModule,\n    SigamToastModule,\n  ],\n})\nexport class UiComponentsModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "SigamButtonModule"
+                        },
+                        {
+                            "name": "SigamCalendarModule"
+                        },
+                        {
+                            "name": "SigamCardModule"
+                        },
+                        {
+                            "name": "SigamCheckboxModule"
+                        },
+                        {
+                            "name": "SigamConfirmboxModule"
+                        },
+                        {
+                            "name": "SigamDropdownModule"
+                        },
+                        {
+                            "name": "SigamMultiselectModule"
+                        },
+                        {
+                            "name": "SigamNavModule"
+                        },
+                        {
+                            "name": "SigamPaginatorModule"
+                        },
+                        {
+                            "name": "SigamTableModule"
+                        },
+                        {
+                            "name": "SigamTabmenuModule"
+                        },
+                        {
+                            "name": "SigamToastModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "SigamButtonModule"
+                        },
+                        {
+                            "name": "SigamCalendarModule"
+                        },
+                        {
+                            "name": "SigamCardModule"
+                        },
+                        {
+                            "name": "SigamCheckboxModule"
+                        },
+                        {
+                            "name": "SigamConfirmboxModule"
+                        },
+                        {
+                            "name": "SigamDropdownModule"
+                        },
+                        {
+                            "name": "SigamMultiselectModule"
+                        },
+                        {
+                            "name": "SigamNavModule"
+                        },
+                        {
+                            "name": "SigamPaginatorModule"
+                        },
+                        {
+                            "name": "SigamTableModule"
+                        },
+                        {
+                            "name": "SigamTabmenuModule"
+                        },
+                        {
+                            "name": "SigamToastModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Checked",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Loading",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "OnlyTitle",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardComponent>",
+                "defaultValue": "(args: CardComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CheckboxComponent>",
+                "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CalendarComponent>",
+                "defaultValue": "(args: CalendarComponent) => ({\r\n  component: CalendarComponent,\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ConfirmboxComponent>",
+                "defaultValue": "() => ({\r\n  props: {},\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<DropdownComponent>",
+                "defaultValue": "(args: DropdownComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<MultiselectComponent>",
+                "defaultValue": "(args: MultiselectComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PaginatorComponent>",
+                "defaultValue": "(args: PaginatorComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavComponent>",
+                "defaultValue": "(args: NavComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ToastComponent>",
+                "defaultValue": "(args: ToastComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <sigam-toast [position]=\"position\" [message]=\"message\" #toastComp></sigam-toast>\r\n    <sigam-button label=\"Show Toast\" (click)=\"toastComp.showToast()\"></sigam-button>\r\n  `\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Unchecked",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithoutFooter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithoutLabel",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithPreselectedOption",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithPresetDate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts": [
+                {
+                    "name": "Checked",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CheckboxComponent>",
+                    "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Unchecked",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "WithoutLabel",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/card/card.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "OnlyTitle",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CardComponent>",
+                    "defaultValue": "(args: CardComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "WithoutFooter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/calendar/calendar.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CalendarComponent>",
+                    "defaultValue": "(args: CalendarComponent) => ({\r\n  component: CalendarComponent,\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "WithPresetDate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ConfirmboxComponent>",
+                    "defaultValue": "() => ({\r\n  props: {},\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<DropdownComponent>",
+                    "defaultValue": "(args: DropdownComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "WithPreselectedOption",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MultiselectComponent>",
+                    "defaultValue": "(args: MultiselectComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/paginator/paginator.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<PaginatorComponent>",
+                    "defaultValue": "(args: PaginatorComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/nav/nav.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<NavComponent>",
+                    "defaultValue": "(args: NavComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/toast/toast.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ToastComponent>",
+                    "defaultValue": "(args: ToastComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <sigam-toast [position]=\"position\" [message]=\"message\" #toastComp></sigam-toast>\r\n    <sigam-button label=\"Show Toast\" (click)=\"toastComp.showToast()\"></sigam-button>\r\n  `\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/table/table.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TableComponent>",
+                    "defaultValue": "(args: TableComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/ui-components/src/lib/components/button/button.stories.ts": [
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Loading",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n})"
+                }
+            ],
+            "projects/ui-components/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-components/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/ui-components/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/23",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Loading",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/calendar/calendar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CalendarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/calendar/calendar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithPresetDate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OnlyTitle",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithoutFooter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/checkbox/checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Checked",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Unchecked",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/checkbox/checkbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithoutLabel",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/confirmbox/comfirmbox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/confirmbox/confirmbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ConfirmboxComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/dropdown/dropdown.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DropdownComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/dropdown/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithPreselectedOption",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/multiselect/multiselect.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MultiselectComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/multiselect/multiselect.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/nav/nav.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/nav/nav.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/paginator/paginator.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PaginatorComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/paginator/paginator.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/table/table.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/table/table.component.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TableColumn",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/table/table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/tabmenu/tabmenu.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TabmenuComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/toast/toast.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ToastComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/components/toast/toast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/ui-components.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UiComponentsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-components/src/lib/ui-components.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UiComponentsService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            }
+        ]
+    }
+}

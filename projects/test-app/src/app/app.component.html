@@ -1,0 +1,56 @@
+<p>button</p>
+<sigam-button label="Butao" type="Submit" [rounded]=true></sigam-button>
+
+<hr>
+<p>card</p>
+<sigam-card title="Titulo" subtitle="Subtitle" footer="Card Footer">
+  algum conteudo maluco
+</sigam-card>
+
+<hr>
+<p>Nav</p>
+<sigam-nav [model]="items"></sigam-nav>
+
+<hr>
+<p>checkbox</p>
+<sigam-checkbox
+  label="Cheese"
+  value="Cheese"
+  [(checked)]="pizzaIngredient['Cheese']"
+  inputId="ingredient1"
+  (checkedChange)="onCheckboxChange('Cheese', $event)">
+</sigam-checkbox>
+
+<sigam-checkbox
+  label="Mushroom"
+  value="Mushroom"
+  [(checked)]="pizzaIngredient['Mushroom']"
+  inputId="ingredient2"
+  (checkedChange)="onCheckboxChange('Mushroom', $event)">
+</sigam-checkbox>
+
+<hr>
+<p>dropdown-select</p>
+<sigam-dropdown
+  [options]="cities"
+  [(selectedOption)]="selectedCity"
+  (selectedOptionChange)="onCityChange($event)"
+  placeholder="Select a City">
+</sigam-dropdown>
+
+<hr>
+<p>Paginator</p>
+<sigam-paginator
+  [first]="first"
+  [rows]="rows"
+  [totalRecords]="totalRecords"
+  (pageChange)="onPageChange($event)">
+</sigam-paginator>
+
+<hr>
+<p>Confirm Box</p>
+<sigam-confirmbox></sigam-confirmbox>
+
+
+
+
